@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		091489D519220DF00040F7C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091489D419220DF00040F7C5 /* Foundation.framework */; };
+		091489D719220DF00040F7C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091489D619220DF00040F7C5 /* CoreGraphics.framework */; };
+		091489D919220DF00040F7C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091489D819220DF00040F7C5 /* UIKit.framework */; };
+		091489DF19220DF00040F7C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 091489DD19220DF00040F7C5 /* InfoPlist.strings */; };
+		091489E119220DF00040F7C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 091489E019220DF00040F7C5 /* main.m */; };
+		091489E519220DF00040F7C5 /* SKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 091489E419220DF00040F7C5 /* SKAppDelegate.m */; };
+		091489E819220DF00040F7C5 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 091489E619220DF00040F7C5 /* Main_iPhone.storyboard */; };
+		091489EB19220DF00040F7C5 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 091489E919220DF00040F7C5 /* Main_iPad.storyboard */; };
+		091489EE19220DF00040F7C5 /* SKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 091489ED19220DF00040F7C5 /* SKViewController.m */; };
+		091489F019220DF00040F7C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 091489EF19220DF00040F7C5 /* Images.xcassets */; };
+		091489F719220DF00040F7C5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091489F619220DF00040F7C5 /* XCTest.framework */; };
+		091489F819220DF00040F7C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091489D419220DF00040F7C5 /* Foundation.framework */; };
+		091489F919220DF00040F7C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091489D819220DF00040F7C5 /* UIKit.framework */; };
+		09148A0119220DF00040F7C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 091489FF19220DF00040F7C5 /* InfoPlist.strings */; };
+		09148A0319220DF00040F7C5 /* scrabbleKeyboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A0219220DF00040F7C5 /* scrabbleKeyboardTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		091489FA19220DF00040F7C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 091489C919220DF00040F7C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 091489D019220DF00040F7C5;
+			remoteInfo = scrabbleKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		091489D119220DF00040F7C5 /* scrabbleKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scrabbleKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		091489D419220DF00040F7C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		091489D619220DF00040F7C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		091489D819220DF00040F7C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		091489DC19220DF00040F7C5 /* scrabbleKeyboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "scrabbleKeyboard-Info.plist"; sourceTree = "<group>"; };
+		091489DE19220DF00040F7C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		091489E019220DF00040F7C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		091489E219220DF00040F7C5 /* scrabbleKeyboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "scrabbleKeyboard-Prefix.pch"; sourceTree = "<group>"; };
+		091489E319220DF00040F7C5 /* SKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKAppDelegate.h; sourceTree = "<group>"; };
+		091489E419220DF00040F7C5 /* SKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKAppDelegate.m; sourceTree = "<group>"; };
+		091489E719220DF00040F7C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		091489EA19220DF00040F7C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		091489EC19220DF00040F7C5 /* SKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKViewController.h; sourceTree = "<group>"; };
+		091489ED19220DF00040F7C5 /* SKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKViewController.m; sourceTree = "<group>"; };
+		091489EF19220DF00040F7C5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		091489F519220DF00040F7C5 /* scrabbleKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scrabbleKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		091489F619220DF00040F7C5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		091489FE19220DF00040F7C5 /* scrabbleKeyboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "scrabbleKeyboardTests-Info.plist"; sourceTree = "<group>"; };
+		09148A0019220DF00040F7C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09148A0219220DF00040F7C5 /* scrabbleKeyboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = scrabbleKeyboardTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		091489CE19220DF00040F7C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091489D719220DF00040F7C5 /* CoreGraphics.framework in Frameworks */,
+				091489D919220DF00040F7C5 /* UIKit.framework in Frameworks */,
+				091489D519220DF00040F7C5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		091489F219220DF00040F7C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091489F719220DF00040F7C5 /* XCTest.framework in Frameworks */,
+				091489F919220DF00040F7C5 /* UIKit.framework in Frameworks */,
+				091489F819220DF00040F7C5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		091489C819220DF00040F7C5 = {
+			isa = PBXGroup;
+			children = (
+				091489DA19220DF00040F7C5 /* scrabbleKeyboard */,
+				091489FC19220DF00040F7C5 /* scrabbleKeyboardTests */,
+				091489D319220DF00040F7C5 /* Frameworks */,
+				091489D219220DF00040F7C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		091489D219220DF00040F7C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				091489D119220DF00040F7C5 /* scrabbleKeyboard.app */,
+				091489F519220DF00040F7C5 /* scrabbleKeyboardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		091489D319220DF00040F7C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				091489D419220DF00040F7C5 /* Foundation.framework */,
+				091489D619220DF00040F7C5 /* CoreGraphics.framework */,
+				091489D819220DF00040F7C5 /* UIKit.framework */,
+				091489F619220DF00040F7C5 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		091489DA19220DF00040F7C5 /* scrabbleKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				091489E319220DF00040F7C5 /* SKAppDelegate.h */,
+				091489E419220DF00040F7C5 /* SKAppDelegate.m */,
+				091489E619220DF00040F7C5 /* Main_iPhone.storyboard */,
+				091489E919220DF00040F7C5 /* Main_iPad.storyboard */,
+				091489EC19220DF00040F7C5 /* SKViewController.h */,
+				091489ED19220DF00040F7C5 /* SKViewController.m */,
+				091489EF19220DF00040F7C5 /* Images.xcassets */,
+				091489DB19220DF00040F7C5 /* Supporting Files */,
+			);
+			path = scrabbleKeyboard;
+			sourceTree = "<group>";
+		};
+		091489DB19220DF00040F7C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				091489DC19220DF00040F7C5 /* scrabbleKeyboard-Info.plist */,
+				091489DD19220DF00040F7C5 /* InfoPlist.strings */,
+				091489E019220DF00040F7C5 /* main.m */,
+				091489E219220DF00040F7C5 /* scrabbleKeyboard-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		091489FC19220DF00040F7C5 /* scrabbleKeyboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				09148A0219220DF00040F7C5 /* scrabbleKeyboardTests.m */,
+				091489FD19220DF00040F7C5 /* Supporting Files */,
+			);
+			path = scrabbleKeyboardTests;
+			sourceTree = "<group>";
+		};
+		091489FD19220DF00040F7C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				091489FE19220DF00040F7C5 /* scrabbleKeyboardTests-Info.plist */,
+				091489FF19220DF00040F7C5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		091489D019220DF00040F7C5 /* scrabbleKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09148A0619220DF00040F7C5 /* Build configuration list for PBXNativeTarget "scrabbleKeyboard" */;
+			buildPhases = (
+				091489CD19220DF00040F7C5 /* Sources */,
+				091489CE19220DF00040F7C5 /* Frameworks */,
+				091489CF19220DF00040F7C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = scrabbleKeyboard;
+			productName = scrabbleKeyboard;
+			productReference = 091489D119220DF00040F7C5 /* scrabbleKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		091489F419220DF00040F7C5 /* scrabbleKeyboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09148A0919220DF00040F7C5 /* Build configuration list for PBXNativeTarget "scrabbleKeyboardTests" */;
+			buildPhases = (
+				091489F119220DF00040F7C5 /* Sources */,
+				091489F219220DF00040F7C5 /* Frameworks */,
+				091489F319220DF00040F7C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				091489FB19220DF00040F7C5 /* PBXTargetDependency */,
+			);
+			name = scrabbleKeyboardTests;
+			productName = scrabbleKeyboardTests;
+			productReference = 091489F519220DF00040F7C5 /* scrabbleKeyboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		091489C919220DF00040F7C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SK;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = lagspoon.scrabbleKeyboard;
+				TargetAttributes = {
+					091489F419220DF00040F7C5 = {
+						TestTargetID = 091489D019220DF00040F7C5;
+					};
+				};
+			};
+			buildConfigurationList = 091489CC19220DF00040F7C5 /* Build configuration list for PBXProject "scrabbleKeyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 091489C819220DF00040F7C5;
+			productRefGroup = 091489D219220DF00040F7C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				091489D019220DF00040F7C5 /* scrabbleKeyboard */,
+				091489F419220DF00040F7C5 /* scrabbleKeyboardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		091489CF19220DF00040F7C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091489EB19220DF00040F7C5 /* Main_iPad.storyboard in Resources */,
+				091489F019220DF00040F7C5 /* Images.xcassets in Resources */,
+				091489E819220DF00040F7C5 /* Main_iPhone.storyboard in Resources */,
+				091489DF19220DF00040F7C5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		091489F319220DF00040F7C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09148A0119220DF00040F7C5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		091489CD19220DF00040F7C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091489E519220DF00040F7C5 /* SKAppDelegate.m in Sources */,
+				091489EE19220DF00040F7C5 /* SKViewController.m in Sources */,
+				091489E119220DF00040F7C5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		091489F119220DF00040F7C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09148A0319220DF00040F7C5 /* scrabbleKeyboardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		091489FB19220DF00040F7C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 091489D019220DF00040F7C5 /* scrabbleKeyboard */;
+			targetProxy = 091489FA19220DF00040F7C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		091489DD19220DF00040F7C5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				091489DE19220DF00040F7C5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		091489E619220DF00040F7C5 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				091489E719220DF00040F7C5 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		091489E919220DF00040F7C5 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				091489EA19220DF00040F7C5 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		091489FF19220DF00040F7C5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09148A0019220DF00040F7C5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09148A0419220DF00040F7C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		09148A0519220DF00040F7C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09148A0719220DF00040F7C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "scrabbleKeyboard/scrabbleKeyboard-Prefix.pch";
+				INFOPLIST_FILE = "scrabbleKeyboard/scrabbleKeyboard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		09148A0819220DF00040F7C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "scrabbleKeyboard/scrabbleKeyboard-Prefix.pch";
+				INFOPLIST_FILE = "scrabbleKeyboard/scrabbleKeyboard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		09148A0A19220DF00040F7C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/scrabbleKeyboard.app/scrabbleKeyboard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "scrabbleKeyboard/scrabbleKeyboard-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "scrabbleKeyboardTests/scrabbleKeyboardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		09148A0B19220DF00040F7C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/scrabbleKeyboard.app/scrabbleKeyboard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "scrabbleKeyboard/scrabbleKeyboard-Prefix.pch";
+				INFOPLIST_FILE = "scrabbleKeyboardTests/scrabbleKeyboardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		091489CC19220DF00040F7C5 /* Build configuration list for PBXProject "scrabbleKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09148A0419220DF00040F7C5 /* Debug */,
+				09148A0519220DF00040F7C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09148A0619220DF00040F7C5 /* Build configuration list for PBXNativeTarget "scrabbleKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09148A0719220DF00040F7C5 /* Debug */,
+				09148A0819220DF00040F7C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		09148A0919220DF00040F7C5 /* Build configuration list for PBXNativeTarget "scrabbleKeyboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09148A0A19220DF00040F7C5 /* Debug */,
+				09148A0B19220DF00040F7C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 091489C919220DF00040F7C5 /* Project object */;
+}
