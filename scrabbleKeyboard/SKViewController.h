@@ -10,4 +10,7 @@
 
 @interface SKViewController : UIViewController
 
+@property (strong, nonatomic) NSString *word;
+
+
 @end

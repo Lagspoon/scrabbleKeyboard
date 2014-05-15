@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>pointsPerTile</key>
+	<integer>20</integer>
+	<key>timeToSolve</key>
+	<integer>120</integer>
+	<key>words</key>
+	<array>
+		<string>table</string>
+		<string>chaise</string>
+		<string>lite</string>
+	</array>
+</dict>
+</plist>
