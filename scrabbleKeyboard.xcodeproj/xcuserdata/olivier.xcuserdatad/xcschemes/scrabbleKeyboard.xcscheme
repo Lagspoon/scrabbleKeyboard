@@ -38,6 +38,16 @@
                ReferencedContainer = "container:scrabbleKeyboard.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "09D3F3E219C1AC9F0026277A"
+               BuildableName = "S4MKKeyboardTests.xctest"
+               BlueprintName = "S4MKKeyboardTests"
+               ReferencedContainer = "container:scrabbleKeyboard.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

@@ -4,10 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>S4MKKeyboard.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>scrabbleKeyboard.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +23,16 @@
 			<true/>
 		</dict>
 		<key>091489F419220DF00040F7C5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>09D3F3D519C1AC9F0026277A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>09D3F3E219C1AC9F0026277A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

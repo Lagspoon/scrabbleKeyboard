@@ -28,6 +28,14 @@
     return label;
 }
 
+- (id) initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+
+    }
+    return self;
+}
+
 //update the label's text
 -(void)setValue:(int)value
 {

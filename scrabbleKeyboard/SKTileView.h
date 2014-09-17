@@ -7,19 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SKTile.h"
 
 @class SKTileView;
-@protocol TileDragDelegateProtocol <NSObject>
--(void)tileView:(SKTileView*)tileView didDragToPoint:(CGPoint)pt;
+@protocol tileDelegate <NSObject>
+- (void) tileView:(SKTileView*)tileView didDragToPoint:(CGPoint)pt;
+- (void) tileViewIsTapped:(SKTileView *)tileView;
 @end
 
 @interface SKTileView : UIImageView
 
-@property (strong, nonatomic, readonly) NSString* letter;
-@property (assign, nonatomic) BOOL isMatched;
-@property (weak, nonatomic) id<TileDragDelegateProtocol> dragDelegate;
-
--(instancetype)initWithLetter:(NSString*)letter andSideLength:(float)sideLength;
+@property (strong, nonatomic, readonly) SKTile *tile;
+@property (weak, nonatomic) id<tileDelegate> delegate;
+@property (nonatomic) CGAffineTransform initialTransform;
+-(instancetype)initWithTile:(SKTile *)tile sideLength:(float)sideLength;
 -(void)randomize;
 
 @end

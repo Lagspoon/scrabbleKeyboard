@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SKTarget.h"
+#import "SKTileView.h"
 
 @interface SKTargetView : UIImageView
-@property (strong, nonatomic, readonly) NSString* letter;
-@property (assign, nonatomic) BOOL isMatched;
 
--(instancetype)initWithLetter:(NSString*)letter andSideLength:(float)sideLength;
+
+@property (nonatomic, strong, readonly) SKTarget *target;
+@property (nonatomic, strong) SKTileView *tileViewOnto;
+-(instancetype)initWithTarget:(SKTarget*)target sideLength:(float) sideLength;
+
 @end

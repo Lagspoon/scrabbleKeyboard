@@ -16,20 +16,12 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor clearColor];
- self.font = kFontHUDBig;
+        self.font = [UIFont systemFontOfSize:18.0];//kFontHUDBig;
         // Initialization code
     }
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 //helper method that implements time formatting
 //to an int parameter (eg the seconds left)

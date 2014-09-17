@@ -13,12 +13,10 @@
 
 @interface SKHUDView : UIView
 
-//inside the interface declaration
-@property (strong, nonatomic) SKStopwatchView* stopwatch;
 +(instancetype)viewWithRect:(CGRect)r;
-//with the other property
-@property (strong, nonatomic) SKCounterLabelView* gamePoints;
 
+@property (strong, nonatomic) SKCounterLabelView* gamePoints;
+@property (strong, nonatomic) SKStopwatchView* stopwatch;
 @property (strong, nonatomic) UIButton* btnHelp;
 
 @end

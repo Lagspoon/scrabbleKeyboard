@@ -7,49 +7,99 @@
 //
 
 #import "SKViewController.h"
-#import "SKWordsData.h"
 #import "SKGameController.h"
+#import "SKScrabbleBoardController.h"
 #import "config.h"
 #import "SKHUDView.h"
 
 @interface SKViewController ()
 
-@property (strong, nonatomic) SKGameController* controller;
+@property (strong, nonatomic) SKGameController *gameController;
+@property (strong, nonatomic) SKScrabbleBoardController *boardController;
+
+@property (weak, nonatomic) IBOutlet UIView *viewBoard;
+
+@property (weak, nonatomic) IBOutlet UIView *viewStopwatch;
+@property (weak, nonatomic) IBOutlet SKHUDView *viewHud;
+@property (weak, nonatomic) IBOutlet SKCounterLabelView *viewCounter;
+
+@property (strong, nonatomic) NSArray *arrayWords;
 
 @end
 
 @implementation SKViewController
 
--(instancetype)initWithCoder:(NSCoder *)decoder
-{
-    self = [super initWithCoder:decoder];
-    if (self != nil) {
+/*//////////////////////////////////////////////////////////////////////////////////////////////
+ Accessors
+ //////////////////////////////////////////////////////////////////////////////////////////////*/
+
+- (SKGameController *) gameController {
+    if (!_gameController) {
         //create the game controller
-        self.controller = [[SKGameController alloc] init];
+        
+        _gameController = [[SKGameController alloc] init];
+        _gameController.delegate = self;
+        _gameController.datasource = self;
+       // _gameController.spelling = self.spelling;
+       // _gameController.hud = self.viewHud;
     }
-    return self;
+    return _gameController;
 }
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////
+ LifeCycle VC
+ //////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    SKWordsData* spelling1 = [SKWordsData spellingWithNum:1];
-    NSLog(@"words: %@", spelling1.words);
 
-    UIView* boardLayer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
-    [self.view addSubview: boardLayer];
-    
-    self.controller.boardView = boardLayer;
-    //add one layer for all hud and controls
-    SKHUDView* hudView = [SKHUDView viewWithRect:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
-    [self.view addSubview:hudView];
-    
-    self.controller.hud = hudView;
-    self.controller.spelling = spelling1;
-    [self.controller dealRandomWord];
+    self.gameController = [[SKGameController alloc] init];
+    self.boardController = [[SKScrabbleBoardController alloc] initWithBoardInView:self.viewBoard];
+    [self.boardController dealWord:[self nextWord]];
+    [self.gameController newQuestion];
+
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+//Game controller Delegate and Datasource
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+- (void) scoreBoardWithGameResult:(NSArray *)gameResult {
+    [self performSegueWithIdentifier:@"testResult" sender:self];
+}
+
+- (NSUInteger) timeToSolve {
+    return 10;
+}
+
+- (NSUInteger) maxWordLength {
+    return 10;
+}
+
+- (UIView *) gameViewContainer:(id)sender {
+    return self.viewBoard;
+}
+
+- (gameKeyboardType) gameKeyboardType:(id)sender {
+    return gameKeyboardTile;
+}
+
+
+- (NSString *) nextWord {
+    return @"Hello";
+}
+
+
+- (void) starDust {
 }
 
 
 
+
 @end
+

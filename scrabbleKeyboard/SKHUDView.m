@@ -11,6 +11,22 @@
 
 @implementation SKHUDView
 
+
+- (SKCounterLabelView *) gamePoints {
+    if (!_gamePoints) {
+        _gamePoints = (SKCounterLabelView *)[self viewWithTag:1];
+    }
+    return _gamePoints;
+}
+
+- (SKStopwatchView *) stopwatch {
+    if (!_stopwatch) {
+        _stopwatch = (SKStopwatchView *) [self viewWithTag:2];
+        _stopwatch.seconds = 0;
+    }
+    return _stopwatch;
+}
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -21,15 +37,20 @@
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
+- (id) initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    
+    if (self) {
+        
+        self.userInteractionEnabled = YES;
+        self.stopwatch.seconds = 0;
 
+    }
+    
+    
+    
+    return self;
+}
 
 +(instancetype)viewWithRect:(CGRect)r
 {
@@ -38,24 +59,27 @@
     hud.userInteractionEnabled = YES;
 
     //the stopwatch
-    hud.stopwatch = [[SKStopwatchView alloc] initWithFrame: CGRectMake(kScreenWidth/2-150, 0, 300, 100)];
+    hud.stopwatch = [[SKStopwatchView alloc] initWithFrame: CGRectMake(r.origin.x, r.origin.y, 200, 80)];
+    hud.stopwatch.backgroundColor = [UIColor redColor];
     hud.stopwatch.seconds = 0;
     [hud addSubview: hud.stopwatch];
     
     
     
+
+    //the dynamic points label
+    hud.gamePoints = [SKCounterLabelView labelWithFont:kFontHUD frame:CGRectMake(r.origin.x + r.size.width - 200,r.origin.y,200,80) andValue:0];
+    hud.gamePoints.textColor = [UIColor colorWithRed:0.38 green:0.098 blue:0.035 alpha:1] /*#611909*/;
+    [hud addSubview: hud.gamePoints];
     
     //"points" label
-    UILabel* pts = [[UILabel alloc] initWithFrame:CGRectMake(kScreenWidth-340,30,140,70)];
+    UILabel* pts = [[UILabel alloc] initWithFrame:CGRectMake(hud.gamePoints.frame.origin.x-100, r.origin.y,100,80)];
     pts.backgroundColor = [UIColor clearColor];
     pts.font = kFontHUD;
     pts.text = @" Points:";
     [hud addSubview:pts];
     
-    //the dynamic points label
-    hud.gamePoints = [SKCounterLabelView labelWithFont:kFontHUD frame:CGRectMake(kScreenWidth-200,30,200,70) andValue:0];
-    hud.gamePoints.textColor = [UIColor colorWithRed:0.38 green:0.098 blue:0.035 alpha:1] /*#611909*/;
-    [hud addSubview: hud.gamePoints];
+
     
     
     //load the button image

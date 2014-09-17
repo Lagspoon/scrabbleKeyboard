@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4388DEAB-0E0B-49D4-BF70-33C75165BED7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>scrabbleKeyboard</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C67E20C3-9674-4F31-ACD5-9ADFD04D954A</key>
+		<string>https://github.com/Lagspoon/scrabbleKeyboard.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>scrabbleKeyboard.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C67E20C3-9674-4F31-ACD5-9ADFD04D954A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Lagspoon/scrabbleKeyboard.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C67E20C3-9674-4F31-ACD5-9ADFD04D954A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C67E20C3-9674-4F31-ACD5-9ADFD04D954A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>scrabbleKeyboard</string>
+		</dict>
+	</array>
+</dict>
+</plist>

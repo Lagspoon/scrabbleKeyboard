@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SKGameController.h"
 
-@interface SKViewController : UIViewController
-
-@property (strong, nonatomic) NSString *word;
+@interface SKViewController : UIViewController <gameDatasource, gameDelegate>
 
 
 @end

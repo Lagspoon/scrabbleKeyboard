@@ -13,26 +13,13 @@
 		091489DF19220DF00040F7C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 091489DD19220DF00040F7C5 /* InfoPlist.strings */; };
 		091489E119220DF00040F7C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 091489E019220DF00040F7C5 /* main.m */; };
 		091489E519220DF00040F7C5 /* SKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 091489E419220DF00040F7C5 /* SKAppDelegate.m */; };
-		091489E819220DF00040F7C5 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 091489E619220DF00040F7C5 /* Main_iPhone.storyboard */; };
-		091489EB19220DF00040F7C5 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 091489E919220DF00040F7C5 /* Main_iPad.storyboard */; };
 		091489EE19220DF00040F7C5 /* SKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 091489ED19220DF00040F7C5 /* SKViewController.m */; };
 		091489F019220DF00040F7C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 091489EF19220DF00040F7C5 /* Images.xcassets */; };
-		091489F719220DF00040F7C5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091489F619220DF00040F7C5 /* XCTest.framework */; };
-		091489F819220DF00040F7C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091489D419220DF00040F7C5 /* Foundation.framework */; };
-		091489F919220DF00040F7C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091489D819220DF00040F7C5 /* UIKit.framework */; };
-		09148A0119220DF00040F7C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 091489FF19220DF00040F7C5 /* InfoPlist.strings */; };
-		09148A0319220DF00040F7C5 /* scrabbleKeyboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A0219220DF00040F7C5 /* scrabbleKeyboardTests.m */; };
-		09148A0F192238160040F7C5 /* spelling1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09148A0E192238160040F7C5 /* spelling1.plist */; };
 		09148A1D19224EB80040F7C5 /* SKTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A1C19224EB80040F7C5 /* SKTileView.m */; };
-		09148A20192250980040F7C5 /* tile.png in Resources */ = {isa = PBXBuildFile; fileRef = 09148A1F192250980040F7C5 /* tile.png */; };
-		09148A22192250AB0040F7C5 /* tile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09148A21192250AB0040F7C5 /* tile@2x.png */; };
-		09148A25192250B50040F7C5 /* slot.png in Resources */ = {isa = PBXBuildFile; fileRef = 09148A23192250B50040F7C5 /* slot.png */; };
-		09148A26192250B50040F7C5 /* slot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09148A24192250B50040F7C5 /* slot@2x.png */; };
 		09148A291922B84B0040F7C5 /* SKTargetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A281922B84B0040F7C5 /* SKTargetView.m */; };
 		09148A2C192364CE0040F7C5 /* SKStopwatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A2B192364CE0040F7C5 /* SKStopwatchView.m */; };
 		09148A2F1923696B0040F7C5 /* SKHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A2E1923696B0040F7C5 /* SKHUDView.m */; };
 		09148A351923A7EE0040F7C5 /* SKGameData.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A341923A7EE0040F7C5 /* SKGameData.m */; };
-		09148A371923A85A0040F7C5 /* SKWordsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A361923A85A0040F7C5 /* SKWordsData.m */; };
 		09148A3B1923A92A0040F7C5 /* SKGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A3A1923A92A0040F7C5 /* SKGameController.m */; };
 		09148A3E1923B4100040F7C5 /* SKCounterLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A3D1923B4100040F7C5 /* SKCounterLabelView.m */; };
 		09148A42192428B60040F7C5 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 09148A3F192428B60040F7C5 /* win.wav */; };
@@ -41,19 +28,64 @@
 		09148A471924296D0040F7C5 /* SKAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A461924296D0040F7C5 /* SKAudioController.m */; };
 		09148A4A1924BC840040F7C5 /* SKExplodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A491924BC840040F7C5 /* SKExplodeView.m */; };
 		09148A4F1924C3A10040F7C5 /* SKStarDustView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A4E1924C3A10040F7C5 /* SKStarDustView.m */; };
-		09148A511924C5A80040F7C5 /* particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 09148A501924C5A80040F7C5 /* particle.png */; };
-		09148A531924F2310040F7C5 /* btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 09148A521924F2310040F7C5 /* btn.png */; };
+		09D3F3D719C1AC9F0026277A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091489D419220DF00040F7C5 /* Foundation.framework */; };
+		09D3F3DC19C1AC9F0026277A /* S4MKKeyboard.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 09D3F3DB19C1AC9F0026277A /* S4MKKeyboard.h */; };
+		09D3F3DE19C1AC9F0026277A /* S4MKKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D3F3DD19C1AC9F0026277A /* S4MKKeyboard.m */; };
+		09D3F40119C1AD2F0026277A /* SKGameController.h in Headers */ = {isa = PBXBuildFile; fileRef = 09148A391923A91A0040F7C5 /* SKGameController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D3F40419C1B2040026277A /* SKGameData.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A341923A7EE0040F7C5 /* SKGameData.m */; };
+		09D3F40519C1B2040026277A /* SKTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A1C19224EB80040F7C5 /* SKTileView.m */; };
+		09D3F40619C1B2040026277A /* SKTargetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A281922B84B0040F7C5 /* SKTargetView.m */; };
+		09D3F40719C1B2040026277A /* SKStopwatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A2B192364CE0040F7C5 /* SKStopwatchView.m */; };
+		09D3F40819C1B2040026277A /* SKHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A2E1923696B0040F7C5 /* SKHUDView.m */; };
+		09D3F40919C1B2040026277A /* SKCounterLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A3D1923B4100040F7C5 /* SKCounterLabelView.m */; };
+		09D3F40A19C1B2040026277A /* SKExplodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A491924BC840040F7C5 /* SKExplodeView.m */; };
+		09D3F40B19C1B2040026277A /* SKStarDustView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A4E1924C3A10040F7C5 /* SKStarDustView.m */; };
+		09D3F40C19C1B2040026277A /* SKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 091489ED19220DF00040F7C5 /* SKViewController.m */; };
+		09D3F40D19C1B2040026277A /* SKGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A3A1923A92A0040F7C5 /* SKGameController.m */; };
+		09D3F40E19C1B2040026277A /* SKAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A461924296D0040F7C5 /* SKAudioController.m */; };
+		09D3F40F19C1B2140026277A /* SKTileView.h in Headers */ = {isa = PBXBuildFile; fileRef = 09148A1B19224EB80040F7C5 /* SKTileView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D3F41019C1B22A0026277A /* SKHUDView.h in Headers */ = {isa = PBXBuildFile; fileRef = 09148A2D1923696B0040F7C5 /* SKHUDView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D3F41119C1B2500026277A /* SKStopwatchView.h in Headers */ = {isa = PBXBuildFile; fileRef = 09148A2A192364CE0040F7C5 /* SKStopwatchView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D3F41219C1B26B0026277A /* SKGameData.h in Headers */ = {isa = PBXBuildFile; fileRef = 09148A331923A7DC0040F7C5 /* SKGameData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D3F41319C1B26B0026277A /* SKTargetView.h in Headers */ = {isa = PBXBuildFile; fileRef = 09148A271922B84B0040F7C5 /* SKTargetView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D3F41419C1B26B0026277A /* SKCounterLabelView.h in Headers */ = {isa = PBXBuildFile; fileRef = 09148A3C1923B4100040F7C5 /* SKCounterLabelView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D3F41519C1B26B0026277A /* SKStarDustView.h in Headers */ = {isa = PBXBuildFile; fileRef = 09148A4D1924C3A10040F7C5 /* SKStarDustView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D3F41619C1B26B0026277A /* SKViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 091489EC19220DF00040F7C5 /* SKViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D3F41719C1B26B0026277A /* SKAudioController.h in Headers */ = {isa = PBXBuildFile; fileRef = 09148A451924296D0040F7C5 /* SKAudioController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D3F41819C1B2B40026277A /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 09148A1919224BC30040F7C5 /* config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D3F43019C1F1330026277A /* SKBoardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D3F42619C1F1330026277A /* SKBoardController.m */; };
+		09D3F43119C1F1330026277A /* SKKeyboardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D3F42919C1F1330026277A /* SKKeyboardController.m */; };
+		09D3F43219C1F1330026277A /* SKScrabbleBoardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D3F42B19C1F1330026277A /* SKScrabbleBoardController.m */; };
+		09D3F43519C1F61D0026277A /* SKExplodeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 09148A481924BC840040F7C5 /* SKExplodeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D3F43619C1F61D0026277A /* SKBoardController.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D3F42519C1F1330026277A /* SKBoardController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D3F43719C1F61D0026277A /* SKDictWordResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D3F42719C1F1330026277A /* SKDictWordResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D3F43819C1F61D0026277A /* SKScrabbleBoardController.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D3F42A19C1F1330026277A /* SKScrabbleBoardController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D3F43919C1F63B0026277A /* SKBoardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D3F42619C1F1330026277A /* SKBoardController.m */; };
+		09D3F43A19C1F63B0026277A /* SKKeyboardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D3F42919C1F1330026277A /* SKKeyboardController.m */; };
+		09D3F43B19C1F63B0026277A /* SKScrabbleBoardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D3F42B19C1F1330026277A /* SKScrabbleBoardController.m */; };
+		09D3F43C19C2F26E0026277A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091489D619220DF00040F7C5 /* CoreGraphics.framework */; };
+		09D3F43D19C2F2760026277A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091489D819220DF00040F7C5 /* UIKit.framework */; };
+		09D3F44819C85F470026277A /* SKTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D3F44719C85F470026277A /* SKTile.m */; };
+		09D3F44919C85F670026277A /* SKTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D3F44719C85F470026277A /* SKTile.m */; };
+		09D3F44E19C8609B0026277A /* SKTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D3F44C19C8609B0026277A /* SKTarget.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D3F44F19C8609B0026277A /* SKTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D3F44D19C8609B0026277A /* SKTarget.m */; };
+		09D3F45019C8609B0026277A /* SKTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D3F44D19C8609B0026277A /* SKTarget.m */; };
+		09D3F45319C8D1B50026277A /* SKTile.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D3F44619C85F470026277A /* SKTile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D3F45619C908D90026277A /* SKScrabbleKeyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D3F45419C908D90026277A /* SKScrabbleKeyboard.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		091489FA19220DF00040F7C5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 091489C919220DF00040F7C5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 091489D019220DF00040F7C5;
-			remoteInfo = scrabbleKeyboard;
+/* Begin PBXCopyFilesBuildPhase section */
+		09D3F3D419C1AC9F0026277A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				09D3F3DC19C1AC9F0026277A /* S4MKKeyboard.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		091489D119220DF00040F7C5 /* scrabbleKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scrabbleKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,24 +98,12 @@
 		091489E219220DF00040F7C5 /* scrabbleKeyboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "scrabbleKeyboard-Prefix.pch"; sourceTree = "<group>"; };
 		091489E319220DF00040F7C5 /* SKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKAppDelegate.h; sourceTree = "<group>"; };
 		091489E419220DF00040F7C5 /* SKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKAppDelegate.m; sourceTree = "<group>"; };
-		091489E719220DF00040F7C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		091489EA19220DF00040F7C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		091489EC19220DF00040F7C5 /* SKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKViewController.h; sourceTree = "<group>"; };
 		091489ED19220DF00040F7C5 /* SKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKViewController.m; sourceTree = "<group>"; };
 		091489EF19220DF00040F7C5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		091489F519220DF00040F7C5 /* scrabbleKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scrabbleKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		091489F619220DF00040F7C5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		091489FE19220DF00040F7C5 /* scrabbleKeyboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "scrabbleKeyboardTests-Info.plist"; sourceTree = "<group>"; };
-		09148A0019220DF00040F7C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		09148A0219220DF00040F7C5 /* scrabbleKeyboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = scrabbleKeyboardTests.m; sourceTree = "<group>"; };
-		09148A0E192238160040F7C5 /* spelling1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = spelling1.plist; sourceTree = "<group>"; };
 		09148A1919224BC30040F7C5 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = config.h; path = scrabbleKeyboard/config.h; sourceTree = "<group>"; };
 		09148A1B19224EB80040F7C5 /* SKTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTileView.h; sourceTree = "<group>"; };
 		09148A1C19224EB80040F7C5 /* SKTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTileView.m; sourceTree = "<group>"; };
-		09148A1F192250980040F7C5 /* tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tile.png; sourceTree = "<group>"; };
-		09148A21192250AB0040F7C5 /* tile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tile@2x.png"; sourceTree = "<group>"; };
-		09148A23192250B50040F7C5 /* slot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slot.png; sourceTree = "<group>"; };
-		09148A24192250B50040F7C5 /* slot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slot@2x.png"; sourceTree = "<group>"; };
 		09148A271922B84B0040F7C5 /* SKTargetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTargetView.h; sourceTree = "<group>"; };
 		09148A281922B84B0040F7C5 /* SKTargetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTargetView.m; sourceTree = "<group>"; };
 		09148A2A192364CE0040F7C5 /* SKStopwatchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKStopwatchView.h; sourceTree = "<group>"; };
@@ -92,8 +112,6 @@
 		09148A2E1923696B0040F7C5 /* SKHUDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKHUDView.m; sourceTree = "<group>"; };
 		09148A331923A7DC0040F7C5 /* SKGameData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKGameData.h; sourceTree = "<group>"; };
 		09148A341923A7EE0040F7C5 /* SKGameData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKGameData.m; sourceTree = "<group>"; };
-		09148A361923A85A0040F7C5 /* SKWordsData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKWordsData.m; sourceTree = "<group>"; };
-		09148A381923A86E0040F7C5 /* SKWordsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKWordsData.h; sourceTree = "<group>"; };
 		09148A391923A91A0040F7C5 /* SKGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKGameController.h; sourceTree = "<group>"; };
 		09148A3A1923A92A0040F7C5 /* SKGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKGameController.m; sourceTree = "<group>"; };
 		09148A3C1923B4100040F7C5 /* SKCounterLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKCounterLabelView.h; sourceTree = "<group>"; };
@@ -107,8 +125,22 @@
 		09148A491924BC840040F7C5 /* SKExplodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKExplodeView.m; sourceTree = "<group>"; };
 		09148A4D1924C3A10040F7C5 /* SKStarDustView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKStarDustView.h; sourceTree = "<group>"; };
 		09148A4E1924C3A10040F7C5 /* SKStarDustView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKStarDustView.m; sourceTree = "<group>"; };
-		09148A501924C5A80040F7C5 /* particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle.png; sourceTree = "<group>"; };
-		09148A521924F2310040F7C5 /* btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn.png; sourceTree = "<group>"; };
+		09D3F3D619C1AC9F0026277A /* libS4MKKeyboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libS4MKKeyboard.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D3F3DA19C1AC9F0026277A /* S4MKKeyboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "S4MKKeyboard-Prefix.pch"; sourceTree = "<group>"; };
+		09D3F3DB19C1AC9F0026277A /* S4MKKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = S4MKKeyboard.h; path = S4MKKeyboard/S4MKKeyboard.h; sourceTree = "<group>"; };
+		09D3F3DD19C1AC9F0026277A /* S4MKKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = S4MKKeyboard.m; path = S4MKKeyboard/S4MKKeyboard.m; sourceTree = "<group>"; };
+		09D3F42519C1F1330026277A /* SKBoardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKBoardController.h; sourceTree = "<group>"; };
+		09D3F42619C1F1330026277A /* SKBoardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKBoardController.m; sourceTree = "<group>"; };
+		09D3F42719C1F1330026277A /* SKDictWordResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKDictWordResult.h; sourceTree = "<group>"; };
+		09D3F42819C1F1330026277A /* SKKeyboardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKKeyboardController.h; sourceTree = "<group>"; };
+		09D3F42919C1F1330026277A /* SKKeyboardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKKeyboardController.m; sourceTree = "<group>"; };
+		09D3F42A19C1F1330026277A /* SKScrabbleBoardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKScrabbleBoardController.h; sourceTree = "<group>"; };
+		09D3F42B19C1F1330026277A /* SKScrabbleBoardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKScrabbleBoardController.m; sourceTree = "<group>"; };
+		09D3F44619C85F470026277A /* SKTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTile.h; sourceTree = "<group>"; };
+		09D3F44719C85F470026277A /* SKTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTile.m; sourceTree = "<group>"; };
+		09D3F44C19C8609B0026277A /* SKTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTarget.h; sourceTree = "<group>"; };
+		09D3F44D19C8609B0026277A /* SKTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTarget.m; sourceTree = "<group>"; };
+		09D3F45519C908D90026277A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SKScrabbleKeyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,13 +154,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		091489F219220DF00040F7C5 /* Frameworks */ = {
+		09D3F3D319C1AC9F0026277A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				091489F719220DF00040F7C5 /* XCTest.framework in Frameworks */,
-				091489F919220DF00040F7C5 /* UIKit.framework in Frameworks */,
-				091489F819220DF00040F7C5 /* Foundation.framework in Frameworks */,
+				09D3F43D19C2F2760026277A /* UIKit.framework in Frameworks */,
+				09D3F43C19C2F26E0026277A /* CoreGraphics.framework in Frameworks */,
+				09D3F3D719C1AC9F0026277A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +170,9 @@
 		091489C819220DF00040F7C5 = {
 			isa = PBXGroup;
 			children = (
-				09148A1919224BC30040F7C5 /* config.h */,
-				091489DA19220DF00040F7C5 /* scrabbleKeyboard */,
-				091489FC19220DF00040F7C5 /* scrabbleKeyboardTests */,
+				09D3F43319C1F42B0026277A /* Classes */,
+				09148A1E1922507A0040F7C5 /* Assets */,
+				09D3F43419C1F5970026277A /* Target specific */,
 				091489D319220DF00040F7C5 /* Frameworks */,
 				091489D219220DF00040F7C5 /* Products */,
 			);
@@ -150,7 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				091489D119220DF00040F7C5 /* scrabbleKeyboard.app */,
-				091489F519220DF00040F7C5 /* scrabbleKeyboardTests.xctest */,
+				09D3F3D619C1AC9F0026277A /* libS4MKKeyboard.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,25 +193,21 @@
 				091489D419220DF00040F7C5 /* Foundation.framework */,
 				091489D619220DF00040F7C5 /* CoreGraphics.framework */,
 				091489D819220DF00040F7C5 /* UIKit.framework */,
-				091489F619220DF00040F7C5 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		091489DA19220DF00040F7C5 /* scrabbleKeyboard */ = {
+		091489DA19220DF00040F7C5 /* scrabbleKeyboard App */ = {
 			isa = PBXGroup;
 			children = (
 				091489E319220DF00040F7C5 /* SKAppDelegate.h */,
 				091489E419220DF00040F7C5 /* SKAppDelegate.m */,
-				091489E619220DF00040F7C5 /* Main_iPhone.storyboard */,
-				091489E919220DF00040F7C5 /* Main_iPad.storyboard */,
-				09148A131922385D0040F7C5 /* Model */,
-				09148A1A19224E7D0040F7C5 /* View */,
-				09148A141922386B0040F7C5 /* Controller */,
-				09148A1E1922507A0040F7C5 /* Asset */,
-				091489EF19220DF00040F7C5 /* Images.xcassets */,
+				091489EC19220DF00040F7C5 /* SKViewController.h */,
+				091489ED19220DF00040F7C5 /* SKViewController.m */,
+				09D3F45419C908D90026277A /* SKScrabbleKeyboard.storyboard */,
 				091489DB19220DF00040F7C5 /* Supporting Files */,
 			);
+			name = "scrabbleKeyboard App";
 			path = scrabbleKeyboard;
 			sourceTree = "<group>";
 		};
@@ -194,56 +222,37 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		091489FC19220DF00040F7C5 /* scrabbleKeyboardTests */ = {
-			isa = PBXGroup;
-			children = (
-				09148A0219220DF00040F7C5 /* scrabbleKeyboardTests.m */,
-				091489FD19220DF00040F7C5 /* Supporting Files */,
-			);
-			path = scrabbleKeyboardTests;
-			sourceTree = "<group>";
-		};
-		091489FD19220DF00040F7C5 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				091489FE19220DF00040F7C5 /* scrabbleKeyboardTests-Info.plist */,
-				091489FF19220DF00040F7C5 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		09148A131922385D0040F7C5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				09148A0E192238160040F7C5 /* spelling1.plist */,
-				09148A381923A86E0040F7C5 /* SKWordsData.h */,
-				09148A361923A85A0040F7C5 /* SKWordsData.m */,
 				09148A331923A7DC0040F7C5 /* SKGameData.h */,
 				09148A341923A7EE0040F7C5 /* SKGameData.m */,
+				09D3F44619C85F470026277A /* SKTile.h */,
+				09D3F44719C85F470026277A /* SKTile.m */,
+				09D3F44C19C8609B0026277A /* SKTarget.h */,
+				09D3F44D19C8609B0026277A /* SKTarget.m */,
 			);
 			name = Model;
+			path = scrabbleKeyboard;
 			sourceTree = "<group>";
 		};
 		09148A141922386B0040F7C5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				091489EC19220DF00040F7C5 /* SKViewController.h */,
-				091489ED19220DF00040F7C5 /* SKViewController.m */,
 				09148A391923A91A0040F7C5 /* SKGameController.h */,
 				09148A3A1923A92A0040F7C5 /* SKGameController.m */,
+				09D3F44519C845660026277A /* boardController */,
 				09148A451924296D0040F7C5 /* SKAudioController.h */,
 				09148A461924296D0040F7C5 /* SKAudioController.m */,
 			);
 			name = Controller;
+			path = scrabbleKeyboard;
 			sourceTree = "<group>";
 		};
 		09148A1A19224E7D0040F7C5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				09148A1B19224EB80040F7C5 /* SKTileView.h */,
-				09148A1C19224EB80040F7C5 /* SKTileView.m */,
-				09148A271922B84B0040F7C5 /* SKTargetView.h */,
-				09148A281922B84B0040F7C5 /* SKTargetView.m */,
+				09D3F45219C878970026277A /* scrabbleBoard */,
 				09148A2A192364CE0040F7C5 /* SKStopwatchView.h */,
 				09148A2B192364CE0040F7C5 /* SKStopwatchView.m */,
 				09148A2D1923696B0040F7C5 /* SKHUDView.h */,
@@ -256,25 +265,113 @@
 				09148A4E1924C3A10040F7C5 /* SKStarDustView.m */,
 			);
 			name = View;
+			path = scrabbleKeyboard;
 			sourceTree = "<group>";
 		};
-		09148A1E1922507A0040F7C5 /* Asset */ = {
+		09148A1E1922507A0040F7C5 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				09148A521924F2310040F7C5 /* btn.png */,
-				09148A501924C5A80040F7C5 /* particle.png */,
+				091489EF19220DF00040F7C5 /* Images.xcassets */,
 				09148A3F192428B60040F7C5 /* win.wav */,
 				09148A40192428B60040F7C5 /* wrong.wav */,
 				09148A41192428B60040F7C5 /* ding.wav */,
-				09148A1F192250980040F7C5 /* tile.png */,
-				09148A21192250AB0040F7C5 /* tile@2x.png */,
-				09148A23192250B50040F7C5 /* slot.png */,
-				09148A24192250B50040F7C5 /* slot@2x.png */,
 			);
-			name = Asset;
+			name = Assets;
+			path = scrabbleKeyboard;
+			sourceTree = "<group>";
+		};
+		09D3F3D919C1AC9F0026277A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09D3F3DA19C1AC9F0026277A /* S4MKKeyboard-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = S4MKKeyboard;
+			sourceTree = "<group>";
+		};
+		09D3F43319C1F42B0026277A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				09148A1919224BC30040F7C5 /* config.h */,
+				09148A131922385D0040F7C5 /* Model */,
+				09148A1A19224E7D0040F7C5 /* View */,
+				09148A141922386B0040F7C5 /* Controller */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		09D3F43419C1F5970026277A /* Target specific */ = {
+			isa = PBXGroup;
+			children = (
+				091489DA19220DF00040F7C5 /* scrabbleKeyboard App */,
+				09D3F44319C34A2A0026277A /* S4MKKeyboardLibrairy */,
+			);
+			name = "Target specific";
+			sourceTree = "<group>";
+		};
+		09D3F44319C34A2A0026277A /* S4MKKeyboardLibrairy */ = {
+			isa = PBXGroup;
+			children = (
+				09D3F3DB19C1AC9F0026277A /* S4MKKeyboard.h */,
+				09D3F3DD19C1AC9F0026277A /* S4MKKeyboard.m */,
+				09D3F3D919C1AC9F0026277A /* Supporting Files */,
+			);
+			name = S4MKKeyboardLibrairy;
+			sourceTree = "<group>";
+		};
+		09D3F44519C845660026277A /* boardController */ = {
+			isa = PBXGroup;
+			children = (
+				09D3F42719C1F1330026277A /* SKDictWordResult.h */,
+				09D3F42519C1F1330026277A /* SKBoardController.h */,
+				09D3F42619C1F1330026277A /* SKBoardController.m */,
+				09D3F42819C1F1330026277A /* SKKeyboardController.h */,
+				09D3F42919C1F1330026277A /* SKKeyboardController.m */,
+				09D3F42A19C1F1330026277A /* SKScrabbleBoardController.h */,
+				09D3F42B19C1F1330026277A /* SKScrabbleBoardController.m */,
+			);
+			name = boardController;
+			sourceTree = "<group>";
+		};
+		09D3F45219C878970026277A /* scrabbleBoard */ = {
+			isa = PBXGroup;
+			children = (
+				09148A1B19224EB80040F7C5 /* SKTileView.h */,
+				09148A1C19224EB80040F7C5 /* SKTileView.m */,
+				09148A271922B84B0040F7C5 /* SKTargetView.h */,
+				09148A281922B84B0040F7C5 /* SKTargetView.m */,
+			);
+			name = scrabbleBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		09D3F40019C1AD080026277A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D3F41819C1B2B40026277A /* config.h in Headers */,
+				09D3F40119C1AD2F0026277A /* SKGameController.h in Headers */,
+				09D3F41019C1B22A0026277A /* SKHUDView.h in Headers */,
+				09D3F41119C1B2500026277A /* SKStopwatchView.h in Headers */,
+				09D3F40F19C1B2140026277A /* SKTileView.h in Headers */,
+				09D3F41219C1B26B0026277A /* SKGameData.h in Headers */,
+				09D3F44E19C8609B0026277A /* SKTarget.h in Headers */,
+				09D3F45319C8D1B50026277A /* SKTile.h in Headers */,
+				09D3F41319C1B26B0026277A /* SKTargetView.h in Headers */,
+				09D3F41419C1B26B0026277A /* SKCounterLabelView.h in Headers */,
+				09D3F41519C1B26B0026277A /* SKStarDustView.h in Headers */,
+				09D3F41619C1B26B0026277A /* SKViewController.h in Headers */,
+				09D3F41719C1B26B0026277A /* SKAudioController.h in Headers */,
+				09D3F43519C1F61D0026277A /* SKExplodeView.h in Headers */,
+				09D3F43619C1F61D0026277A /* SKBoardController.h in Headers */,
+				09D3F43719C1F61D0026277A /* SKDictWordResult.h in Headers */,
+				09D3F43819C1F61D0026277A /* SKScrabbleBoardController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		091489D019220DF00040F7C5 /* scrabbleKeyboard */ = {
@@ -294,23 +391,23 @@
 			productReference = 091489D119220DF00040F7C5 /* scrabbleKeyboard.app */;
 			productType = "com.apple.product-type.application";
 		};
-		091489F419220DF00040F7C5 /* scrabbleKeyboardTests */ = {
+		09D3F3D519C1AC9F0026277A /* S4MKKeyboard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 09148A0919220DF00040F7C5 /* Build configuration list for PBXNativeTarget "scrabbleKeyboardTests" */;
+			buildConfigurationList = 09D3F3F219C1ACA00026277A /* Build configuration list for PBXNativeTarget "S4MKKeyboard" */;
 			buildPhases = (
-				091489F119220DF00040F7C5 /* Sources */,
-				091489F219220DF00040F7C5 /* Frameworks */,
-				091489F319220DF00040F7C5 /* Resources */,
+				09D3F3D219C1AC9F0026277A /* Sources */,
+				09D3F3D319C1AC9F0026277A /* Frameworks */,
+				09D3F3D419C1AC9F0026277A /* CopyFiles */,
+				09D3F40019C1AD080026277A /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				091489FB19220DF00040F7C5 /* PBXTargetDependency */,
 			);
-			name = scrabbleKeyboardTests;
-			productName = scrabbleKeyboardTests;
-			productReference = 091489F519220DF00040F7C5 /* scrabbleKeyboardTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = S4MKKeyboard;
+			productName = S4MKKeyboard;
+			productReference = 09D3F3D619C1AC9F0026277A /* libS4MKKeyboard.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -321,11 +418,6 @@
 				CLASSPREFIX = SK;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = lagspoon.scrabbleKeyboard;
-				TargetAttributes = {
-					091489F419220DF00040F7C5 = {
-						TestTargetID = 091489D019220DF00040F7C5;
-					};
-				};
 			};
 			buildConfigurationList = 091489CC19220DF00040F7C5 /* Build configuration list for PBXProject "scrabbleKeyboard" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -341,7 +433,7 @@
 			projectRoot = "";
 			targets = (
 				091489D019220DF00040F7C5 /* scrabbleKeyboard */,
-				091489F419220DF00040F7C5 /* scrabbleKeyboardTests */,
+				09D3F3D519C1AC9F0026277A /* S4MKKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -351,28 +443,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09148A22192250AB0040F7C5 /* tile@2x.png in Resources */,
-				091489EB19220DF00040F7C5 /* Main_iPad.storyboard in Resources */,
 				091489F019220DF00040F7C5 /* Images.xcassets in Resources */,
+				09D3F45619C908D90026277A /* SKScrabbleKeyboard.storyboard in Resources */,
 				09148A43192428B60040F7C5 /* wrong.wav in Resources */,
-				09148A531924F2310040F7C5 /* btn.png in Resources */,
-				091489E819220DF00040F7C5 /* Main_iPhone.storyboard in Resources */,
-				09148A0F192238160040F7C5 /* spelling1.plist in Resources */,
 				09148A44192428B60040F7C5 /* ding.wav in Resources */,
-				09148A511924C5A80040F7C5 /* particle.png in Resources */,
-				09148A26192250B50040F7C5 /* slot@2x.png in Resources */,
-				09148A25192250B50040F7C5 /* slot.png in Resources */,
 				09148A42192428B60040F7C5 /* win.wav in Resources */,
 				091489DF19220DF00040F7C5 /* InfoPlist.strings in Resources */,
-				09148A20192250980040F7C5 /* tile.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		091489F319220DF00040F7C5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09148A0119220DF00040F7C5 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,40 +459,52 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09D3F44F19C8609B0026277A /* SKTarget.m in Sources */,
 				09148A351923A7EE0040F7C5 /* SKGameData.m in Sources */,
 				091489E519220DF00040F7C5 /* SKAppDelegate.m in Sources */,
 				09148A471924296D0040F7C5 /* SKAudioController.m in Sources */,
+				09D3F44819C85F470026277A /* SKTile.m in Sources */,
 				09148A4A1924BC840040F7C5 /* SKExplodeView.m in Sources */,
+				09D3F43119C1F1330026277A /* SKKeyboardController.m in Sources */,
 				09148A2C192364CE0040F7C5 /* SKStopwatchView.m in Sources */,
+				09D3F43019C1F1330026277A /* SKBoardController.m in Sources */,
 				09148A3E1923B4100040F7C5 /* SKCounterLabelView.m in Sources */,
 				09148A4F1924C3A10040F7C5 /* SKStarDustView.m in Sources */,
 				09148A1D19224EB80040F7C5 /* SKTileView.m in Sources */,
+				09D3F43219C1F1330026277A /* SKScrabbleBoardController.m in Sources */,
 				09148A3B1923A92A0040F7C5 /* SKGameController.m in Sources */,
 				091489EE19220DF00040F7C5 /* SKViewController.m in Sources */,
 				09148A2F1923696B0040F7C5 /* SKHUDView.m in Sources */,
-				09148A371923A85A0040F7C5 /* SKWordsData.m in Sources */,
 				091489E119220DF00040F7C5 /* main.m in Sources */,
 				09148A291922B84B0040F7C5 /* SKTargetView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		091489F119220DF00040F7C5 /* Sources */ = {
+		09D3F3D219C1AC9F0026277A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09148A0319220DF00040F7C5 /* scrabbleKeyboardTests.m in Sources */,
+				09D3F43919C1F63B0026277A /* SKBoardController.m in Sources */,
+				09D3F43A19C1F63B0026277A /* SKKeyboardController.m in Sources */,
+				09D3F43B19C1F63B0026277A /* SKScrabbleBoardController.m in Sources */,
+				09D3F45019C8609B0026277A /* SKTarget.m in Sources */,
+				09D3F40419C1B2040026277A /* SKGameData.m in Sources */,
+				09D3F40519C1B2040026277A /* SKTileView.m in Sources */,
+				09D3F40619C1B2040026277A /* SKTargetView.m in Sources */,
+				09D3F40719C1B2040026277A /* SKStopwatchView.m in Sources */,
+				09D3F44919C85F670026277A /* SKTile.m in Sources */,
+				09D3F40819C1B2040026277A /* SKHUDView.m in Sources */,
+				09D3F40919C1B2040026277A /* SKCounterLabelView.m in Sources */,
+				09D3F40A19C1B2040026277A /* SKExplodeView.m in Sources */,
+				09D3F40B19C1B2040026277A /* SKStarDustView.m in Sources */,
+				09D3F40C19C1B2040026277A /* SKViewController.m in Sources */,
+				09D3F40D19C1B2040026277A /* SKGameController.m in Sources */,
+				09D3F40E19C1B2040026277A /* SKAudioController.m in Sources */,
+				09D3F3DE19C1AC9F0026277A /* S4MKKeyboard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		091489FB19220DF00040F7C5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 091489D019220DF00040F7C5 /* scrabbleKeyboard */;
-			targetProxy = 091489FA19220DF00040F7C5 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		091489DD19220DF00040F7C5 /* InfoPlist.strings */ = {
@@ -427,28 +515,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		091489E619220DF00040F7C5 /* Main_iPhone.storyboard */ = {
+		09D3F45419C908D90026277A /* SKScrabbleKeyboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				091489E719220DF00040F7C5 /* Base */,
+				09D3F45519C908D90026277A /* Base */,
 			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		091489E919220DF00040F7C5 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				091489EA19220DF00040F7C5 /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		091489FF19220DF00040F7C5 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				09148A0019220DF00040F7C5 /* en */,
-			);
-			name = InfoPlist.strings;
+			name = SKScrabbleKeyboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -552,43 +624,35 @@
 			};
 			name = Release;
 		};
-		09148A0A19220DF00040F7C5 /* Debug */ = {
+		09D3F3F319C1ACA00026277A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/scrabbleKeyboard.app/scrabbleKeyboard";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
+				DSTROOT = /tmp/S4MKKeyboard.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "scrabbleKeyboard/scrabbleKeyboard-Prefix.pch";
+				GCC_PREFIX_HEADER = "S4MKKeyboard/S4MKKeyboard-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "scrabbleKeyboardTests/scrabbleKeyboardTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				PUBLIC_HEADERS_FOLDER_PATH = /include;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		09148A0B19220DF00040F7C5 /* Release */ = {
+		09D3F3F419C1ACA00026277A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/scrabbleKeyboard.app/scrabbleKeyboard";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
+				DSTROOT = /tmp/S4MKKeyboard.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "scrabbleKeyboard/scrabbleKeyboard-Prefix.pch";
-				INFOPLIST_FILE = "scrabbleKeyboardTests/scrabbleKeyboardTests-Info.plist";
+				GCC_PREFIX_HEADER = "S4MKKeyboard/S4MKKeyboard-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				PUBLIC_HEADERS_FOLDER_PATH = /include;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -611,14 +675,16 @@
 				09148A0819220DF00040F7C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		09148A0919220DF00040F7C5 /* Build configuration list for PBXNativeTarget "scrabbleKeyboardTests" */ = {
+		09D3F3F219C1ACA00026277A /* Build configuration list for PBXNativeTarget "S4MKKeyboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				09148A0A19220DF00040F7C5 /* Debug */,
-				09148A0B19220DF00040F7C5 /* Release */,
+				09D3F3F319C1ACA00026277A /* Debug */,
+				09D3F3F419C1ACA00026277A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

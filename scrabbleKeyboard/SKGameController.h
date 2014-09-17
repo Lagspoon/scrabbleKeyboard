@@ -7,28 +7,66 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SKWordsData.h"
-#import "SKTileView.h"
 #import "SKHUDView.h"
 #import "SKGameData.h"
-#import "SKAudioController.h"
+#import "SKBoardController.h"
 
-@interface SKGameController : NSObject <TileDragDelegateProtocol>
+@protocol gameDelegate <NSObject>
 
-//the view to add word elements to
-@property (weak, nonatomic) UIView* boardView;
+typedef enum gameKeyboardType gameKeyboardType;
+enum gameKeyboardType
+{
+    gameKeyboardTile = 0,
+    gameKeyboardStandard = 1,
+};
 
-//the current spelling
-@property (strong, nonatomic) SKWordsData* spelling;
+
+@required
+
+- (gameKeyboardType) gameKeyboardType:(id) sender;
+- (UIView *) gameViewContainer:(id) sender;
+- (NSUInteger) timeToSolve;
+- (NSUInteger) maxWordLength;
+- (void) scoreBoardWithGameResult:(NSArray *)gameResult;
+//- (void)starDust;
+//- (NSUInteger) level;
+
+@end
+
+
+@protocol gameDatasource <NSObject>
+
+- (NSString *) nextWord;
+
+
+@end
+
+
+@interface SKGameController : NSObject <boardDelegate>
+
+-(void)newQuestion;
+-(void)stopStopwatch;
+
+@property (weak, nonatomic) id <gameDelegate> delegate;
+@property (weak, nonatomic) id <gameDatasource> datasource;
+
 
 @property (weak, nonatomic) SKHUDView* hud;
+@property (strong, nonatomic) SKBoardController *boardController;
+@property (strong, nonatomic) NSMutableArray *gameResult; //array of wordResult
 
-//display a new word on the screen
--(void)dealRandomWord;
+typedef enum {
+    easy = 0,
+    medium = 1,
+    hard = 2,
+} gameLevel;
 
-// with the other properties
-@property (strong, nonatomic) SKGameData* data;
-
-@property (strong, nonatomic) SKAudioController* audioController;
+typedef enum {
+    loose = -30,
+    win = 100,
+    tileMatch = 3,
+    tileMissmatch = -5
+    
+} scoringRules;
 
 @end
