@@ -9,7 +9,6 @@
 #import "SKViewController.h"
 #import "SKGameController.h"
 #import "SKScrabbleBoardController.h"
-#import "config.h"
 #import "SKHUDView.h"
 
 @interface SKViewController ()
@@ -18,6 +17,7 @@
 @property (strong, nonatomic) SKScrabbleBoardController *boardController;
 
 @property (weak, nonatomic) IBOutlet UIView *viewBoard;
+@property (weak, nonatomic) IBOutlet UILabel *labelWord;
 
 @property (weak, nonatomic) IBOutlet UIView *viewStopwatch;
 @property (weak, nonatomic) IBOutlet SKHUDView *viewHud;
@@ -56,12 +56,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    self.gameController = [[SKGameController alloc] init];
-    self.boardController = [[SKScrabbleBoardController alloc] initWithBoardInView:self.viewBoard];
-    [self.boardController dealWord:[self nextWord]];
     [self.gameController newQuestion];
-
+    self.labelWord.text = [self nextWord];
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -74,7 +70,7 @@
 }
 
 - (NSUInteger) timeToSolve {
-    return 10;
+    return 60;
 }
 
 - (NSUInteger) maxWordLength {

@@ -10,7 +10,6 @@
 		091489D519220DF00040F7C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091489D419220DF00040F7C5 /* Foundation.framework */; };
 		091489D719220DF00040F7C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091489D619220DF00040F7C5 /* CoreGraphics.framework */; };
 		091489D919220DF00040F7C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091489D819220DF00040F7C5 /* UIKit.framework */; };
-		091489DF19220DF00040F7C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 091489DD19220DF00040F7C5 /* InfoPlist.strings */; };
 		091489E119220DF00040F7C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 091489E019220DF00040F7C5 /* main.m */; };
 		091489E519220DF00040F7C5 /* SKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 091489E419220DF00040F7C5 /* SKAppDelegate.m */; };
 		091489EE19220DF00040F7C5 /* SKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 091489ED19220DF00040F7C5 /* SKViewController.m */; };
@@ -22,12 +21,9 @@
 		09148A351923A7EE0040F7C5 /* SKGameData.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A341923A7EE0040F7C5 /* SKGameData.m */; };
 		09148A3B1923A92A0040F7C5 /* SKGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A3A1923A92A0040F7C5 /* SKGameController.m */; };
 		09148A3E1923B4100040F7C5 /* SKCounterLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A3D1923B4100040F7C5 /* SKCounterLabelView.m */; };
-		09148A42192428B60040F7C5 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 09148A3F192428B60040F7C5 /* win.wav */; };
-		09148A43192428B60040F7C5 /* wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 09148A40192428B60040F7C5 /* wrong.wav */; };
-		09148A44192428B60040F7C5 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 09148A41192428B60040F7C5 /* ding.wav */; };
-		09148A471924296D0040F7C5 /* SKAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A461924296D0040F7C5 /* SKAudioController.m */; };
 		09148A4A1924BC840040F7C5 /* SKExplodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A491924BC840040F7C5 /* SKExplodeView.m */; };
 		09148A4F1924C3A10040F7C5 /* SKStarDustView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A4E1924C3A10040F7C5 /* SKStarDustView.m */; };
+		09A5B1AD19C980F500EA02BD /* SKScrabbleKeyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A5B1AB19C980F500EA02BD /* SKScrabbleKeyboard.storyboard */; };
 		09D3F3D719C1AC9F0026277A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091489D419220DF00040F7C5 /* Foundation.framework */; };
 		09D3F3DC19C1AC9F0026277A /* S4MKKeyboard.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 09D3F3DB19C1AC9F0026277A /* S4MKKeyboard.h */; };
 		09D3F3DE19C1AC9F0026277A /* S4MKKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D3F3DD19C1AC9F0026277A /* S4MKKeyboard.m */; };
@@ -42,7 +38,6 @@
 		09D3F40B19C1B2040026277A /* SKStarDustView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A4E1924C3A10040F7C5 /* SKStarDustView.m */; };
 		09D3F40C19C1B2040026277A /* SKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 091489ED19220DF00040F7C5 /* SKViewController.m */; };
 		09D3F40D19C1B2040026277A /* SKGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A3A1923A92A0040F7C5 /* SKGameController.m */; };
-		09D3F40E19C1B2040026277A /* SKAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09148A461924296D0040F7C5 /* SKAudioController.m */; };
 		09D3F40F19C1B2140026277A /* SKTileView.h in Headers */ = {isa = PBXBuildFile; fileRef = 09148A1B19224EB80040F7C5 /* SKTileView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09D3F41019C1B22A0026277A /* SKHUDView.h in Headers */ = {isa = PBXBuildFile; fileRef = 09148A2D1923696B0040F7C5 /* SKHUDView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09D3F41119C1B2500026277A /* SKStopwatchView.h in Headers */ = {isa = PBXBuildFile; fileRef = 09148A2A192364CE0040F7C5 /* SKStopwatchView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -51,8 +46,6 @@
 		09D3F41419C1B26B0026277A /* SKCounterLabelView.h in Headers */ = {isa = PBXBuildFile; fileRef = 09148A3C1923B4100040F7C5 /* SKCounterLabelView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09D3F41519C1B26B0026277A /* SKStarDustView.h in Headers */ = {isa = PBXBuildFile; fileRef = 09148A4D1924C3A10040F7C5 /* SKStarDustView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09D3F41619C1B26B0026277A /* SKViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 091489EC19220DF00040F7C5 /* SKViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09D3F41719C1B26B0026277A /* SKAudioController.h in Headers */ = {isa = PBXBuildFile; fileRef = 09148A451924296D0040F7C5 /* SKAudioController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09D3F41819C1B2B40026277A /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 09148A1919224BC30040F7C5 /* config.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09D3F43019C1F1330026277A /* SKBoardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D3F42619C1F1330026277A /* SKBoardController.m */; };
 		09D3F43119C1F1330026277A /* SKKeyboardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D3F42919C1F1330026277A /* SKKeyboardController.m */; };
 		09D3F43219C1F1330026277A /* SKScrabbleBoardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D3F42B19C1F1330026277A /* SKScrabbleBoardController.m */; };
@@ -71,7 +64,6 @@
 		09D3F44F19C8609B0026277A /* SKTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D3F44D19C8609B0026277A /* SKTarget.m */; };
 		09D3F45019C8609B0026277A /* SKTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D3F44D19C8609B0026277A /* SKTarget.m */; };
 		09D3F45319C8D1B50026277A /* SKTile.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D3F44619C85F470026277A /* SKTile.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09D3F45619C908D90026277A /* SKScrabbleKeyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D3F45419C908D90026277A /* SKScrabbleKeyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -93,7 +85,6 @@
 		091489D619220DF00040F7C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		091489D819220DF00040F7C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		091489DC19220DF00040F7C5 /* scrabbleKeyboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "scrabbleKeyboard-Info.plist"; sourceTree = "<group>"; };
-		091489DE19220DF00040F7C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		091489E019220DF00040F7C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		091489E219220DF00040F7C5 /* scrabbleKeyboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "scrabbleKeyboard-Prefix.pch"; sourceTree = "<group>"; };
 		091489E319220DF00040F7C5 /* SKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKAppDelegate.h; sourceTree = "<group>"; };
@@ -101,7 +92,6 @@
 		091489EC19220DF00040F7C5 /* SKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKViewController.h; sourceTree = "<group>"; };
 		091489ED19220DF00040F7C5 /* SKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKViewController.m; sourceTree = "<group>"; };
 		091489EF19220DF00040F7C5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		09148A1919224BC30040F7C5 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = config.h; path = scrabbleKeyboard/config.h; sourceTree = "<group>"; };
 		09148A1B19224EB80040F7C5 /* SKTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTileView.h; sourceTree = "<group>"; };
 		09148A1C19224EB80040F7C5 /* SKTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTileView.m; sourceTree = "<group>"; };
 		09148A271922B84B0040F7C5 /* SKTargetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTargetView.h; sourceTree = "<group>"; };
@@ -116,15 +106,11 @@
 		09148A3A1923A92A0040F7C5 /* SKGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKGameController.m; sourceTree = "<group>"; };
 		09148A3C1923B4100040F7C5 /* SKCounterLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKCounterLabelView.h; sourceTree = "<group>"; };
 		09148A3D1923B4100040F7C5 /* SKCounterLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKCounterLabelView.m; sourceTree = "<group>"; };
-		09148A3F192428B60040F7C5 /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
-		09148A40192428B60040F7C5 /* wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wrong.wav; sourceTree = "<group>"; };
-		09148A41192428B60040F7C5 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
-		09148A451924296D0040F7C5 /* SKAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAudioController.h; sourceTree = "<group>"; };
-		09148A461924296D0040F7C5 /* SKAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAudioController.m; sourceTree = "<group>"; };
 		09148A481924BC840040F7C5 /* SKExplodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKExplodeView.h; sourceTree = "<group>"; };
 		09148A491924BC840040F7C5 /* SKExplodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKExplodeView.m; sourceTree = "<group>"; };
 		09148A4D1924C3A10040F7C5 /* SKStarDustView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKStarDustView.h; sourceTree = "<group>"; };
 		09148A4E1924C3A10040F7C5 /* SKStarDustView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKStarDustView.m; sourceTree = "<group>"; };
+		09A5B1AC19C980F500EA02BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SKScrabbleKeyboard.storyboard; sourceTree = "<group>"; };
 		09D3F3D619C1AC9F0026277A /* libS4MKKeyboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libS4MKKeyboard.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D3F3DA19C1AC9F0026277A /* S4MKKeyboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "S4MKKeyboard-Prefix.pch"; sourceTree = "<group>"; };
 		09D3F3DB19C1AC9F0026277A /* S4MKKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = S4MKKeyboard.h; path = S4MKKeyboard/S4MKKeyboard.h; sourceTree = "<group>"; };
@@ -140,7 +126,6 @@
 		09D3F44719C85F470026277A /* SKTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTile.m; sourceTree = "<group>"; };
 		09D3F44C19C8609B0026277A /* SKTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTarget.h; sourceTree = "<group>"; };
 		09D3F44D19C8609B0026277A /* SKTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTarget.m; sourceTree = "<group>"; };
-		09D3F45519C908D90026277A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SKScrabbleKeyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,7 +189,7 @@
 				091489E419220DF00040F7C5 /* SKAppDelegate.m */,
 				091489EC19220DF00040F7C5 /* SKViewController.h */,
 				091489ED19220DF00040F7C5 /* SKViewController.m */,
-				09D3F45419C908D90026277A /* SKScrabbleKeyboard.storyboard */,
+				09A5B1AB19C980F500EA02BD /* SKScrabbleKeyboard.storyboard */,
 				091489DB19220DF00040F7C5 /* Supporting Files */,
 			);
 			name = "scrabbleKeyboard App";
@@ -215,7 +200,6 @@
 			isa = PBXGroup;
 			children = (
 				091489DC19220DF00040F7C5 /* scrabbleKeyboard-Info.plist */,
-				091489DD19220DF00040F7C5 /* InfoPlist.strings */,
 				091489E019220DF00040F7C5 /* main.m */,
 				091489E219220DF00040F7C5 /* scrabbleKeyboard-Prefix.pch */,
 			);
@@ -242,8 +226,6 @@
 				09148A391923A91A0040F7C5 /* SKGameController.h */,
 				09148A3A1923A92A0040F7C5 /* SKGameController.m */,
 				09D3F44519C845660026277A /* boardController */,
-				09148A451924296D0040F7C5 /* SKAudioController.h */,
-				09148A461924296D0040F7C5 /* SKAudioController.m */,
 			);
 			name = Controller;
 			path = scrabbleKeyboard;
@@ -272,12 +254,18 @@
 			isa = PBXGroup;
 			children = (
 				091489EF19220DF00040F7C5 /* Images.xcassets */,
-				09148A3F192428B60040F7C5 /* win.wav */,
-				09148A40192428B60040F7C5 /* wrong.wav */,
-				09148A41192428B60040F7C5 /* ding.wav */,
 			);
 			name = Assets;
 			path = scrabbleKeyboard;
+			sourceTree = "<group>";
+		};
+		09A5B1AA19C97C9E00EA02BD /* not used yet */ = {
+			isa = PBXGroup;
+			children = (
+				09D3F42819C1F1330026277A /* SKKeyboardController.h */,
+				09D3F42919C1F1330026277A /* SKKeyboardController.m */,
+			);
+			name = "not used yet";
 			sourceTree = "<group>";
 		};
 		09D3F3D919C1AC9F0026277A /* Supporting Files */ = {
@@ -292,7 +280,6 @@
 		09D3F43319C1F42B0026277A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				09148A1919224BC30040F7C5 /* config.h */,
 				09148A131922385D0040F7C5 /* Model */,
 				09148A1A19224E7D0040F7C5 /* View */,
 				09148A141922386B0040F7C5 /* Controller */,
@@ -325,10 +312,9 @@
 				09D3F42719C1F1330026277A /* SKDictWordResult.h */,
 				09D3F42519C1F1330026277A /* SKBoardController.h */,
 				09D3F42619C1F1330026277A /* SKBoardController.m */,
-				09D3F42819C1F1330026277A /* SKKeyboardController.h */,
-				09D3F42919C1F1330026277A /* SKKeyboardController.m */,
 				09D3F42A19C1F1330026277A /* SKScrabbleBoardController.h */,
 				09D3F42B19C1F1330026277A /* SKScrabbleBoardController.m */,
+				09A5B1AA19C97C9E00EA02BD /* not used yet */,
 			);
 			name = boardController;
 			sourceTree = "<group>";
@@ -351,7 +337,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09D3F41819C1B2B40026277A /* config.h in Headers */,
 				09D3F40119C1AD2F0026277A /* SKGameController.h in Headers */,
 				09D3F41019C1B22A0026277A /* SKHUDView.h in Headers */,
 				09D3F41119C1B2500026277A /* SKStopwatchView.h in Headers */,
@@ -363,7 +348,6 @@
 				09D3F41419C1B26B0026277A /* SKCounterLabelView.h in Headers */,
 				09D3F41519C1B26B0026277A /* SKStarDustView.h in Headers */,
 				09D3F41619C1B26B0026277A /* SKViewController.h in Headers */,
-				09D3F41719C1B26B0026277A /* SKAudioController.h in Headers */,
 				09D3F43519C1F61D0026277A /* SKExplodeView.h in Headers */,
 				09D3F43619C1F61D0026277A /* SKBoardController.h in Headers */,
 				09D3F43719C1F61D0026277A /* SKDictWordResult.h in Headers */,
@@ -444,11 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				091489F019220DF00040F7C5 /* Images.xcassets in Resources */,
-				09D3F45619C908D90026277A /* SKScrabbleKeyboard.storyboard in Resources */,
-				09148A43192428B60040F7C5 /* wrong.wav in Resources */,
-				09148A44192428B60040F7C5 /* ding.wav in Resources */,
-				09148A42192428B60040F7C5 /* win.wav in Resources */,
-				091489DF19220DF00040F7C5 /* InfoPlist.strings in Resources */,
+				09A5B1AD19C980F500EA02BD /* SKScrabbleKeyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,7 +442,6 @@
 				09D3F44F19C8609B0026277A /* SKTarget.m in Sources */,
 				09148A351923A7EE0040F7C5 /* SKGameData.m in Sources */,
 				091489E519220DF00040F7C5 /* SKAppDelegate.m in Sources */,
-				09148A471924296D0040F7C5 /* SKAudioController.m in Sources */,
 				09D3F44819C85F470026277A /* SKTile.m in Sources */,
 				09148A4A1924BC840040F7C5 /* SKExplodeView.m in Sources */,
 				09D3F43119C1F1330026277A /* SKKeyboardController.m in Sources */,
@@ -499,7 +478,6 @@
 				09D3F40B19C1B2040026277A /* SKStarDustView.m in Sources */,
 				09D3F40C19C1B2040026277A /* SKViewController.m in Sources */,
 				09D3F40D19C1B2040026277A /* SKGameController.m in Sources */,
-				09D3F40E19C1B2040026277A /* SKAudioController.m in Sources */,
 				09D3F3DE19C1AC9F0026277A /* S4MKKeyboard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,18 +485,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		091489DD19220DF00040F7C5 /* InfoPlist.strings */ = {
+		09A5B1AB19C980F500EA02BD /* SKScrabbleKeyboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				091489DE19220DF00040F7C5 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		09D3F45419C908D90026277A /* SKScrabbleKeyboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				09D3F45519C908D90026277A /* Base */,
+				09A5B1AC19C980F500EA02BD /* Base */,
 			);
 			name = SKScrabbleKeyboard.storyboard;
 			sourceTree = "<group>";

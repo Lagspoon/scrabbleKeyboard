@@ -11,12 +11,19 @@
 #import "SKTileView.h"
 #import "SKHUDView.h"
 //#import "SKAudioController.h"
+@protocol scrabbleboardDelegate <boardDelegate>
 
+- (void) tileMatchTarget:(BOOL) isMatching;
+- (NSUInteger) numberOfLetter;
+
+@end
 
 @interface SKScrabbleBoardController : SKBoardController <tileDelegate>
 
 @property (strong, nonatomic) NSMutableArray* tileViews;
 @property (strong, nonatomic) NSMutableArray* targetViews;
+@property (weak, nonatomic) id <scrabbleboardDelegate> delegate;
 
-//@property (strong, nonatomic) SKTargetView *nextTargetView;
+- (id) initWithBoardInView:(UIView *)viewBoard;
+
 @end

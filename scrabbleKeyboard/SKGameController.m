@@ -7,8 +7,6 @@
 //
 
 #import "SKGameController.h"
-#import "config.h"
-
 #import "SKKeyboardController.h"
 #import "SKScrabbleBoardController.h"
 
@@ -34,7 +32,7 @@
     if ([delegate gameKeyboardType:self] == gameKeyboardTile) {
         self.boardController = [[SKScrabbleBoardController alloc] initWithBoardInView:[delegate gameViewContainer:self]];
     } else {
-        self.boardController = [[SKKeyboardController alloc] initWithBoardInView:[delegate gameViewContainer:self]];
+        //self.boardController = [[SKKeyboardController alloc] initWithBoardInView:[delegate gameViewContainer:self]];
     }
     self.boardController.delegate = self;
 }

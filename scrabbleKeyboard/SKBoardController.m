@@ -7,7 +7,6 @@
 //
 
 #import "SKBoardController.h"
-#import "config.h"
 
 @interface SKBoardController ()
 
@@ -17,22 +16,13 @@
 @implementation SKBoardController
 
 
-
 //initialize the board controller
 -(instancetype)init
 {
     self = [super init];
-    if (self != nil) {
+    if (self) {
         //initialize
-        self.audioController = [[SKAudioController alloc] init];
-        [self.audioController preloadAudioEffects: kAudioEffectFiles];
     }
-    return self;
-}
-
-- (id) initWithBoardInView:(UIView *)viewBoard {
-    self = [self init];
-    self.view = viewBoard;
     return self;
 }
 
@@ -50,8 +40,6 @@
     NSAssert(word, @"no level loaded");
     self.word = word;
 }
-
-
 
 
 /////////////////////////////////////////////////////////////////////////////////////
@@ -80,7 +68,7 @@
     [self.delegate wordFulfilled];
 
     //the game is completed!
-    [self.audioController playEffect:kSoundWin];
+    //[self.audioController playEffect:kSoundWin];
  
     NSLog(@"Game Over!");
     

@@ -7,8 +7,7 @@
 //
 
 #import "SKHUDView.h"
-#import "config.h"
-
+#define kFontHUD  [UIFont systemFontOfSize:20.0]
 @implementation SKHUDView
 
 

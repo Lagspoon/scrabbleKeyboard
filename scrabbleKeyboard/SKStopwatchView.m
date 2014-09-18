@@ -7,7 +7,6 @@
 //
 
 #import "SKStopwatchView.h"
-#include "config.h"
 
 @implementation SKStopwatchView
 

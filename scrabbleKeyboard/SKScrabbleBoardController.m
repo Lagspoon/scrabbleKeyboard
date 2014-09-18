@@ -7,11 +7,13 @@
 //
 
 #import "SKScrabbleBoardController.h"
-#import "config.h"
 #import "SKTargetView.h"
 #import "SKExplodeView.h"
 #import "SKStarDustView.h"
 #import "SKTile.h"
+#import <AudioToolbox/AudioToolbox.h>
+
+#define kTileMargin 2.0
 
 
 @interface SKScrabbleBoardController ()
@@ -23,6 +25,16 @@
 @implementation SKScrabbleBoardController
 @synthesize word = _word;
 
+/*///////////////////////////////////////////////////////////////////////
+ Initializer
+ ///////////////////////////////////////////////////////////////////////*/
+- (id) initWithBoardInView:(UIView *)viewBoard {
+    self = [super init];
+    if (self) {
+        self.view = viewBoard;
+    }
+    return self;
+}
 
 /*///////////////////////////////////////////////////////////////////////
  Accessors
@@ -74,8 +86,10 @@
             newTarget.isMatched = NO;
 
             if (![newTarget.letter isEqualToString:@" "]) {
-                SKTargetView* targetView = [[SKTargetView alloc] initWithTarget:newTarget sideLength:self.tileSide];
-                targetView.center = CGPointMake([self xOffsetForTargetView] + 0.5*self.tileSide + i*(self.tileSide + kTileMargin), (0.5*self.tileSide + 20));
+                SKTargetView* targetView = [[SKTargetView alloc] initWithTarget:newTarget sideLength:[self tileSide]];
+                
+                CGPoint point =  CGPointMake([self xOffsetForTargetView] + 0.5*[self tileSide] + i*([self tileSide] + kTileMargin), (0.5*[self tileSide] + 20));
+                targetView.center = point;
                 
                 [self.view addSubview:targetView];
                 [_targetViews addObject:targetView];
@@ -99,10 +113,10 @@
                 newTile.letter = letter;
                 newTile.isMatched = NO;
                 
-                SKTileView* tileView = [[SKTileView alloc] initWithTile:newTile sideLength:self.tileSide];
+                SKTileView* tileView = [[SKTileView alloc] initWithTile:newTile sideLength:[self tileSide]];
                 
                 //new line each  maxNumberOfLettersPerLine tile
-                tileView.center = CGPointMake([self xOffsetForTileView] + (0.5+(i%self.maxNumberOfLettersPerLine))*(self.tileSide + kTileMargin), 3*self.tileSide +self.tileSide*1.5 *floor(i/self.maxNumberOfLettersPerLine));
+                tileView.center = CGPointMake([self xOffsetForTileView] + (0.5+(i%[self maxNumberOfLettersPerLine]))*([self tileSide] + kTileMargin), 3*[self tileSide] + [self tileSide]*1.5 *floor(i/[self maxNumberOfLettersPerLine]));
                 [tileView randomize];
                 tileView.delegate = self;
                 
@@ -122,25 +136,32 @@
  ///////////////////////////////////////////////////////////////////////*/
 
 - (float) xOffsetForTargetView {
-    return  (self.view.bounds.size.width - [self.word length]*(self.tileSide+kTileMargin))/2;
+    float result = (self.view.bounds.size.width - [self.word length]*([self tileSide]+kTileMargin))/2;
+    return result;
 }
 - (float) xOffsetForTileView {
-    return (self.view.bounds.size.width - MIN([self.stringRandomWithWord length],self.maxNumberOfLettersPerLine)*(self.tileSide + kTileMargin))/2;
+    float result =  (self.view.bounds.size.width - MIN([self.stringRandomWithWord length],[self maxNumberOfLettersPerLine])*([self tileSide] + kTileMargin))/2;
+    return result;
 }
 - (float) tileSide {
     /*calculate the tile size tile side depens of the number of lines and the number of letter */
-    return  ceilf(self.view.bounds.size.width *0.9 / MIN(self.maxNumberOfLettersPerLine,[self.delegate numberOfLetter])) - kTileMargin;
+    NSLog(@" view bound size%f", self.view.bounds.size.width);
+    NSLog(@"delegate number of letter %lu", (unsigned long)[self.delegate numberOfLetter]);
+    float result = ceilf(self.view.bounds.size.width *0.9 / MIN([self maxNumberOfLettersPerLine],[self.delegate numberOfLetter])) - kTileMargin;
+    return result;
+    
 }
 
 - (NSUInteger) maxNumberOfLettersPerLine {
-    
+    NSUInteger result;
     if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
     {
         /* Device is iPad */
-        return MAX(15, [self.word length]);
+        result =  MAX(15, [self.word length]);
     } else {
-        return MAX(6, [self.word length]);
+        result =  MAX(6, [self.word length]);
     }
+    return result;
 }
 /*///////////////////////////////////////////////////////////////////////
  utilies
@@ -274,7 +295,7 @@
         SKTargetView* firstTarget = [self.targetViews firstObject] ;
         
         int startX = 0;
-        int endX = kScreenWidth + 300;
+        int endX = 300 + [UIScreen mainScreen].bounds.size.width;
         int startY = firstTarget.center.y;
         
         SKStarDustView* stars = [[SKStarDustView alloc] initWithFrame:CGRectMake(startX, startY, 10, 10)];
@@ -324,7 +345,7 @@
             NSLog(@"Success! You should place the tile here!");
             
             //more stuff to do on success here
-            [self.audioController playEffect: kSoundDing];
+            //[self.audioController playEffect: kSoundDing];
             
             //change the tag before checkForSuccess method
             targetView.target.isMatched= YES;
@@ -344,13 +365,13 @@
                                   delay:0.00
                                 options:UIViewAnimationOptionCurveEaseOut
                              animations:^{
-                                 tileView.center = CGPointMake(tileView.center.x + randomf(-20, 20),
-                                                               tileView.center.y + randomf(20, 30));
+                                 tileView.center = CGPointMake(tileView.center.x + [self randomBetweenMin:-20 Max:20],
+                                                               tileView.center.y + [self randomBetweenMin:20 Max:30]);
                              } completion:nil];
             NSLog(@"Failure. Let the player know this tile doesn't belong here.");
             
             //more stuff to do on failure here
-            [self.audioController playEffect:kSoundWrong];
+            //[self.audioController playEffect:kSoundWrong];
             targetView.target.isMatched=NO;
         }
         [self.delegate tileMatchTarget:isMatching];
@@ -359,6 +380,10 @@
     } else {
         return NO;
     }
+}
+
+- (float) randomBetweenMin :(NSInteger)min Max:(NSInteger)max {
+    return ((float)(arc4random() % (max - min + 1)) + (float)min);
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////

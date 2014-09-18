@@ -7,7 +7,6 @@
 //
 
 #import "SKTileView.h"
-#import "config.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface SKTileView ()
@@ -78,11 +77,15 @@
     return self;
 }
 
+- (float) randomBetweenMin :(NSInteger)min Max:(NSInteger)max {
+    return ((float)(arc4random() % (max - min + 1)) + (float)min);
+}
+
 -(void)randomize {
     //1
     //set random rotation of the tile
     //anywhere between -0.2 and 0.3 radians
-    float rotation = randomf(0,50) / (float)100 - 0.2;
+    float rotation = [self randomBetweenMin:0 Max:50] / (float)100 - 0.2;
     self.initialTransform = self.transform;
     self.transform = CGAffineTransformMakeRotation( rotation );
     //save the current transform
@@ -142,5 +145,7 @@
     //self.transform = _tempTransform;
     self.layer.shadowOpacity = 0.0;
 }
+
+
 
 @end

@@ -35,11 +35,6 @@
     return self;
 }
 
-- (id) initWith:(NSString*) keyboardType inView:(UIView *)viewBoard {
-    self = [super initWithBoardInView:viewBoard];
-    
-    return self;
-}
 
 - (void) viewDidLayoutSubviews {
     

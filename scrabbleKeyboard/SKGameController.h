@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "SKHUDView.h"
 #import "SKGameData.h"
-#import "SKBoardController.h"
+#import "SKScrabbleBoardController.h"
 
 @protocol gameDelegate <NSObject>
 
@@ -28,8 +28,6 @@ enum gameKeyboardType
 - (NSUInteger) timeToSolve;
 - (NSUInteger) maxWordLength;
 - (void) scoreBoardWithGameResult:(NSArray *)gameResult;
-//- (void)starDust;
-//- (NSUInteger) level;
 
 @end
 
@@ -42,7 +40,7 @@ enum gameKeyboardType
 @end
 
 
-@interface SKGameController : NSObject <boardDelegate>
+@interface SKGameController : NSObject <scrabbleboardDelegate>
 
 -(void)newQuestion;
 -(void)stopStopwatch;
