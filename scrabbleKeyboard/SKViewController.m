@@ -94,7 +94,13 @@
 - (void) starDust {
 }
 
+- (gameType) gameType:(id)sender {
+    return gameTypeSpelling;
+}
 
+- (gameLevel) gameLevel:(id)sender {
+    return gameLevelEasy;
+}
 
 
 @end

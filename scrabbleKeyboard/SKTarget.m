@@ -10,4 +10,8 @@
 
 @implementation SKTarget
 
+- (void) setIsEnabled:(BOOL)isEnabled {
+    _isEnabled = isEnabled;
+    self.view.hidden = !isEnabled;
+}
 @end

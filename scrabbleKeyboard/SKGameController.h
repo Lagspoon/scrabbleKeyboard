@@ -13,17 +13,35 @@
 
 @protocol gameDelegate <NSObject>
 
-typedef enum gameKeyboardType gameKeyboardType;
-enum gameKeyboardType
+typedef enum gameKeyboardType
 {
     gameKeyboardTile = 0,
     gameKeyboardStandard = 1,
-};
+} gameKeyboardType;
 
+typedef enum gameType {
+    gameTypeAnagrame = 0,
+    gameTypeSpelling = 1,
+} gameType;
+
+typedef enum gameLevel {
+    gameLevelEasy = 0,
+    gameLevelMedium = 1,
+    gameLevelHard = 2,
+} gameLevel;
+
+typedef enum {
+    loose = -30,
+    win = 100,
+    tileMatch = 3,
+    tileMissmatch = -5
+    
+} scoring;
 
 @required
-
+- (gameType) gameType:(id) sender;
 - (gameKeyboardType) gameKeyboardType:(id) sender;
+- (gameLevel) gameLevel:(id) sender;
 - (UIView *) gameViewContainer:(id) sender;
 - (NSUInteger) timeToSolve;
 - (NSUInteger) maxWordLength;
@@ -53,18 +71,6 @@ enum gameKeyboardType
 @property (strong, nonatomic) SKBoardController *boardController;
 @property (strong, nonatomic) NSMutableArray *gameResult; //array of wordResult
 
-typedef enum {
-    easy = 0,
-    medium = 1,
-    hard = 2,
-} gameLevel;
 
-typedef enum {
-    loose = -30,
-    win = 100,
-    tileMatch = 3,
-    tileMissmatch = -5
-    
-} scoringRules;
 
 @end

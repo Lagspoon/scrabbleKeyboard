@@ -29,6 +29,7 @@
     
     if (self) {
         self.target = target;
+        target.view = self;
         float scale = sideLength/img.size.width;
         self.frame = CGRectMake(0,0,img.size.width*scale, img.size.height*scale);
     }

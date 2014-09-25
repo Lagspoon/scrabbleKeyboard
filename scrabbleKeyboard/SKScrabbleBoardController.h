@@ -16,6 +16,16 @@
 - (void) tileMatchTarget:(BOOL) isMatching;
 - (NSUInteger) numberOfLetter;
 
+typedef enum targetType {
+    targetTypeAllLetters = 0,
+    targetTypeSameNumberOfLetterWithOneVisible = 1,
+    targetTypeMoreNumberOfLetterWithOneVisible = 2,
+    
+} targetType;
+
+- (targetType) targetType;
+
+
 @end
 
 @interface SKScrabbleBoardController : SKBoardController <tileDelegate>

@@ -110,9 +110,9 @@
     }
 }
 
--(void) scoring :(scoringRules) scoringRules {
+-(void) scoring:(scoring) scoring {
     
-    self.score = [NSNumber numberWithInt:([self.score intValue] + scoringRules)];
+    self.score = [NSNumber numberWithInt:([self.score intValue] + scoring)];
     self.hud.gamePoints.value = [self.score intValue];
 }
 
@@ -192,6 +192,29 @@
 //boardDelegate
 /////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////
+
+- (targetType) targetType {
+    switch ([self.delegate gameType:self]) {
+        case gameTypeAnagrame:
+        {
+            return targetTypeAllLetters;
+            break;
+        }
+         
+        case gameTypeSpelling:
+        {
+            return targetTypeMoreNumberOfLetterWithOneVisible;
+            break;
+        }
+            
+        default:
+        {
+            return targetTypeSameNumberOfLetterWithOneVisible;
+            break;
+        }
+    }
+}
+
 
 - (void) tileMatchTarget:(BOOL) isMatching {
     if (isMatching) {

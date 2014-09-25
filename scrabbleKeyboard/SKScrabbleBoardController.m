@@ -19,6 +19,7 @@
 @interface SKScrabbleBoardController ()
 
 @property (strong, nonatomic) NSString *stringRandomWithWord;
+@property (nonatomic) NSUInteger numberOfTargets;
 @end
 
 
@@ -45,7 +46,26 @@
     self.stringRandomWithWord = nil;
 }
 
-
+- (NSUInteger) numberOfTargets {
+    if (!_numberOfTargets) {
+        switch ([self.delegate targetType]) {
+            case targetTypeAllLetters:
+                _numberOfTargets = [self.word length];
+                break;
+                
+            case targetTypeMoreNumberOfLetterWithOneVisible:
+                _numberOfTargets = ceilf([self.word length]*1.3);
+                
+            case targetTypeSameNumberOfLetterWithOneVisible:
+                _numberOfTargets = [self.word length];
+                
+            default:
+                _numberOfTargets = [self.word length];
+                break;
+        }
+    }
+    return _numberOfTargets;
+}
 
 - (NSString *) stringRandomWithWord {
     if (!_stringRandomWithWord)  {
@@ -78,18 +98,30 @@
 
 -(NSMutableArray *) targetViews {
     if (!_targetViews) {
-        _targetViews = [NSMutableArray arrayWithCapacity:[self.word length]];
         
-        for (int i=0;i<[self.word length];i++) {
+        
+        _targetViews = [NSMutableArray arrayWithCapacity:self.numberOfTargets];
+        
+        
+        for (int i=0;i<self.numberOfTargets;i++) {
             SKTarget *newTarget = [[SKTarget alloc] init];
-            newTarget.letter = [self.word substringWithRange:NSMakeRange(i, 1)];
+            if (i<[self.word length]) {
+                newTarget.letter = [self.word substringWithRange:NSMakeRange(i, 1)];
+            } else {
+                newTarget.letter = nil;
+            } 
             newTarget.isMatched = NO;
 
-            if (![newTarget.letter isEqualToString:@" "]) {
+            if (!([newTarget.letter isEqualToString:@" "] && [self.delegate targetType]==targetTypeAllLetters)) {
                 SKTargetView* targetView = [[SKTargetView alloc] initWithTarget:newTarget sideLength:[self tileSide]];
                 
                 CGPoint point =  CGPointMake([self xOffsetForTargetView] + 0.5*[self tileSide] + i*([self tileSide] + kTileMargin), (0.5*[self tileSide] + 20));
                 targetView.center = point;
+                if (i==0) {
+                    targetView.target.isEnabled = YES;
+                } else {
+                    targetView.target.isEnabled = NO;
+                }
                 
                 [self.view addSubview:targetView];
                 [_targetViews addObject:targetView];
@@ -98,6 +130,8 @@
     }
     return _targetViews;
 }
+
+
 
 - (NSMutableArray *) tileViews {
     
@@ -145,8 +179,6 @@
 }
 - (float) tileSide {
     /*calculate the tile size tile side depens of the number of lines and the number of letter */
-    NSLog(@" view bound size%f", self.view.bounds.size.width);
-    NSLog(@"delegate number of letter %lu", (unsigned long)[self.delegate numberOfLetter]);
     float result = ceilf(self.view.bounds.size.width *0.9 / MIN([self maxNumberOfLettersPerLine],[self.delegate numberOfLetter])) - kTileMargin;
     return result;
     
@@ -199,16 +231,7 @@
 /////////////////////////////////////////////////////////////////////////////////////
 
 
-- (SKTargetView *)nextUnmatchedTargetView {
-    //find the first target, not matched yet
-    for (SKTargetView *targetView in self.targetViews) {
-        if (!targetView.target.isMatched) {
-            return targetView;
-            break;
-        }
-    }
-    return nil;
-}
+
 //clear the tiles and targets
 -(void)clearBoard
 {
@@ -247,18 +270,16 @@
                      animations:^{
                          nextTileView.center = targetView.center;
                      } completion:^(BOOL finished) {
-                         //adjust view on spot
-                         [self placeTile:nextTileView atTarget:targetView];
-                         
                          //re-enable the button
                          [self.delegate buttonHelpEnabled:YES];
                          //check for finished game
-                         [self checkForSuccess];
+                         [self isTileView:nextTileView matchTargetView:targetView];
                      }];
 }
 
 -(void)placeTile:(SKTileView*)tileView atTarget:(SKTargetView*)targetView
 {
+    //adjust view on spot
     //1
     targetView.target.isMatched = YES;
     tileView.tile.isMatched = YES;
@@ -287,8 +308,12 @@
 }
 
 
--(BOOL)checkForSuccess
-{
+-(BOOL)checkForSuccess {
+    if ([self nextUnenabledTargetView]) {
+        SKTargetView *nextTargetView = [self nextUnenabledTargetView];
+        nextTargetView.target.isEnabled = YES;
+    }
+    
     if (![self nextUnmatchedTargetView]) {
         
         //win animation
@@ -404,4 +429,28 @@
 }
 
 
+/*////////////////////////////////////////////////////////////////////////////////////
+ Utilities
+ ////////////////////////////////////////////////////////////////////////////////////*/
+
+- (SKTargetView *)nextUnmatchedTargetView {
+    //find the first target, not matched yet
+    for (SKTargetView *targetView in self.targetViews) {
+        if (!targetView.target.isMatched) {
+            return targetView;
+            break;
+        }
+    }
+    return nil;
+}
+
+- (SKTargetView *)nextUnenabledTargetView {
+    for (SKTargetView *targetView in self.targetViews) {
+        if (!targetView.target.isEnabled) {
+            return targetView;
+            break;
+        }
+    }
+    return nil;
+}
 @end

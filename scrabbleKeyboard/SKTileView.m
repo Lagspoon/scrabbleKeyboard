@@ -100,14 +100,12 @@
  /////////////////////////////////////////////////////////////////////*/
 
 - (void) tapAction {
-    NSLog(@"tap action");
     //self.transform = _tempTransform;
     [self.delegate tileViewIsTapped:self];
 }
 
 //1
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    NSLog(@"touch began");
     CGPoint pt = [[touches anyObject] locationInView:self.superview];
     _xOffset = pt.x - self.center.x;
     _yOffset = pt.y - self.center.y;
@@ -122,14 +120,12 @@
 
 //2
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-    NSLog(@"TOUCH MOVED");
     CGPoint pt = [[touches anyObject] locationInView:self.superview];
     self.center = CGPointMake(pt.x - _xOffset, pt.y - _yOffset);
 }
 
 //3
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-    NSLog(@"touches ended");
     [self touchesMoved:touches withEvent:event];
     
     //self.transform = _tempTransform;
