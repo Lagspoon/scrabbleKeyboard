@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "SKTile.h"
 
 @interface SKTarget : NSObject
 
 @property (strong, nonatomic) NSString *letter;
 @property (nonatomic) BOOL isMatched;
 @property (nonatomic) BOOL isEnabled;
-@property (weak, nonatomic) UIView *view;
+@property (weak, nonatomic) SKTile *tileCovering;
+
 @end

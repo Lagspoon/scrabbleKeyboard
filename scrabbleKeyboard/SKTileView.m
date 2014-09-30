@@ -23,13 +23,6 @@
 
 }
 
-//1
-- (id)initWithFrame:(CGRect)frame
-{
-    NSAssert(NO, @"Use initWithLetter:andSideLength instead");
-    return nil;
-}
-
 //2 create new tile for a given letter
 -(instancetype)initWithTile:(SKTile *)tile sideLength:(float)sideLength {
     //the tile background
@@ -93,6 +86,18 @@
     //move randomly upwards
     int yOffset = (arc4random() % 10) - 10;
     self.center = CGPointMake(self.center.x, self.center.y + yOffset);
+    
+    
+    
+    [UIView animateWithDuration:0.35
+     delay:0.00
+     options:UIViewAnimationOptionCurveEaseOut
+     animations:^{
+     self.center = CGPointMake(self.center.x + [self randomBetweenMin:-20 Max:20],
+     self.center.y + [self randomBetweenMin:20 Max:30]);
+     } completion:nil];
+    
+    
 }
 
 /*//////////////////////////////////////////////////////////////////////

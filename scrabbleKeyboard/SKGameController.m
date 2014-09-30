@@ -13,10 +13,14 @@
 
 @interface SKGameController ()
 
+
+@property (strong, nonatomic) NSString *wordSelected;
+
+
 @property (strong, nonatomic) NSString *keyboardType;
 @property (strong, nonatomic) NSTimer *timer;
 
-@property (strong, nonatomic) NSDictionary *wordResult;
+//@property (strong, nonatomic) NSDictionary *wordResult;
 @property (strong, nonatomic) NSNumber *score;
 
 @property (nonatomic) NSUInteger secondsLeft;
@@ -38,12 +42,10 @@
 }
 
 
-/////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////
-//
-/////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////
+/*////////////////////////////////////////////////////////////////////////////////////
 
+////////////////////////////////////////////////////////////////////////////////////*/
+/*
 //connect the Hint button
 -(void)setHud:(SKHUDView *)hud
 {
@@ -65,56 +67,43 @@
     }
     return _gameResult;
 }
+*/
 
-/////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////
-//Triggered action
-/////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////
-
+/*////////////////////////////////////////////////////////////////////////////////////
+ Triggered action
+////////////////////////////////////////////////////////////////////////////////////*/
 
 -(void)newQuestion {
 
     //save the result of the previous word
-    if (self.boardController.word) {
+    /*if (self.boardController.word) {
         [self recordWordResult];
-    }
+    }*/
     
-    NSString *nextWord = [self.datasource nextWord];
+    self.wordSelected = [self.datasource nextWord];
 
-    if (nextWord) {
+    if (self.wordSelected) {
         //deal new word on board
-        [self.boardController dealWord:nextWord];
+        [self.boardController dealWord:self.wordSelected];
         //start the timer
         [self startStopwatch];
-        
-        self.wordResult = [SKGameData wordResult:self.wordResult StartedAt:[NSDate date] EndedAt:nil wordAsked:self.boardController.word stringInput:nil points:nil pass:NO];
-        
+        //self.wordResult = [SKGameData wordResult:self.wordResult StartedAt:[NSDate date] EndedAt:nil wordAsked:self.boardController.word stringInput:nil points:nil pass:NO];
         self.hud.btnHelp.enabled = YES;
-    }
-    
-    else {
+        
+    }  else {
         
         [self stopStopwatch];
-        [self.delegate scoreBoardWithGameResult:[self.gameResult copy]];
+        [self.delegate gameDidFinish];
     }
 }
 
-
-
--(BOOL) checkForSuccessForWord: (NSString *)word withAnswer:(NSString *)answer {
-    if ([word isEqualToString:answer]) {
-        return YES;
-    } else {
-        return NO;
-    }
-}
 
 -(void) scoring:(scoring) scoring {
     
     self.score = [NSNumber numberWithInt:([self.score intValue] + scoring)];
     self.hud.gamePoints.value = [self.score intValue];
 }
+
 
 //the user pressed the hint button
 -(void)actionHint
@@ -126,32 +115,13 @@
     //2
     //self.data.points -= self.spelling.pointsPerTile/2;
     //[self.hud.gamePoints countTo: self.data.points withDuration: 1.5];
-     [self.boardController clue];
-     
+     //[self.boardController clue];
 }
 
-- (void) recordWordResult {
-    
-    NSString *stringInput = [self.boardController.stringResult copy];
-    BOOL pass = [self checkForSuccessForWord:self.boardController.word withAnswer:stringInput];
-    
-    self.wordResult = [SKGameData wordResult:self.wordResult
-                                   StartedAt:nil
-                                     EndedAt:[NSDate date]
-                                   wordAsked:nil
-                                 stringInput:stringInput
-                                      points:self.score
-                                        pass:pass];
-    
-    [self.gameResult addObject:[self.wordResult copy]];
-    self.wordResult = nil;
-}
 
-/////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////
-//Timer
-/////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////
+/*////////////////////////////////////////////////////////////////////////////////////
+ Timer
+////////////////////////////////////////////////////////////////////////////////////*/
 
 -(void)startStopwatch
 {
@@ -167,63 +137,75 @@
                                              repeats:YES];
 }
 
-
 //stop the watch
--(void)stopStopwatch
-{
+-(void)stopStopwatch {
     [self.timer invalidate];
 }
 
 //stopwatch on tick
--(void)tick:(NSTimer*)timer
-{
+-(void)tick:(NSTimer*)timer {
     self.secondsLeft --;
     [self.hud.stopwatch setSeconds:(int)self.secondsLeft];
     
     if (self.secondsLeft==0) {
         [self stopStopwatch];
-        [self newQuestion];
-        
+        [self boardCompleted:self.boardController.word input:self.boardController.input];
     }
 }
 
-/////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////
-//boardDelegate
-/////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////
+/*////////////////////////////////////////////////////////////////////////////////////
+ boardDelegate
+////////////////////////////////////////////////////////////////////////////////////*/
 
 - (targetType) targetType {
     switch ([self.delegate gameType:self]) {
         case gameTypeAnagrame:
-        {
-            return targetTypeAllLetters;
+            return targetTypeAllTargetsVisible;
             break;
-        }
-         
         case gameTypeSpelling:
-        {
-            return targetTypeMoreNumberOfLetterWithOneVisible;
+            return targetTypeUnlimitedTargetsNextVisible;
             break;
-        }
-            
         default:
-        {
-            return targetTypeSameNumberOfLetterWithOneVisible;
+            return targetTypeNextTargetVisible;
             break;
-        }
     }
 }
 
+- (BOOL) checkMatchForEachTile {
+    switch ([self.delegate gameType:self]) {
+        case gameTypeAnagrame:
+            return YES;
+            break;
+        case gameTypeSpelling:
+            return NO;
+            break;
+        default:
+            return NO;
+            break;
+    }
+}
 
 - (void) tileMatchTarget:(BOOL) isMatching {
-    if (isMatching) {
-        [self scoring:tileMatch];
-    } else {
-        //take out points
-        [self scoring:tileMissmatch];
-    }
-    [self.hud.gamePoints countTo:[self.score intValue] withDuration:1.5];
+        switch ([self.delegate gameType:self]) {
+            case gameTypeAnagrame:
+                
+                break;
+            case gameTypeSpelling:
+                
+                break;
+            default:
+            {
+                if (isMatching) {
+                    [self scoring:tileMatch];
+                } else {
+                    //take out points
+                    [self scoring:tileMissmatch];
+                }
+                [self.hud.gamePoints countTo:[self.score intValue] withDuration:1.5];
+                break;
+            }
+                
+        }
 }
 
 - (void) buttonHelpEnabled:(BOOL) isEnabled {
@@ -234,28 +216,37 @@
     }
 }
 
-- (void) wordFulfilled {
+- (void) boardCompleted:(NSString*)word input:(NSString *)input {
+    
+    gameResult result;
+    
+    if ([word isEqualToString:input]) {
+        result = gameResultSuccess;
+    } else {
+        result = gameResultFail;
+    }
+    
+    [self.delegate gameResult:result input:input];
+    
     [self stopStopwatch];
     [self newQuestion];
 }
 
-- (NSUInteger) numberOfLetter {
-    NSUInteger level = [self.boardController.word length];
+- (NSUInteger) numberOfLetterToDeal {
     //switch ([self.delegate level]) {
-    switch (1) {
-        case 1:
-            level = level + 10;
+    switch ([self.delegate gameLevel:self]) {
+        case gameLevelEasy:
+            return [self.wordSelected length] + 10;
             break;
-        case 2:
-            level = level + 15;
+        case gameLevelMedium:
+            return [self.wordSelected length] + 15;
             break;
-        case 3:
-            level = 20;
+        case gameLevelHard:
+            return [self.wordSelected length] + 20;
         default:
-            
+            return [self.wordSelected length];
             break;
     }
-    return level;
 };
 
 @end

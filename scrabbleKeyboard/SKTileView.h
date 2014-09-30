@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 lagspoon.scrabbleKeyboard. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "SKScrabbleView.h"
 #import "SKTile.h"
 
 @class SKTileView;
@@ -15,7 +15,7 @@
 - (void) tileViewIsTapped:(SKTileView *)tileView;
 @end
 
-@interface SKTileView : UIImageView
+@interface SKTileView : SKScrabbleView
 
 @property (strong, nonatomic, readonly) SKTile *tile;
 @property (weak, nonatomic) id<tileDelegate> delegate;

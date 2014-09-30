@@ -13,18 +13,19 @@
 //#import "SKAudioController.h"
 @protocol scrabbleboardDelegate <boardDelegate>
 
-- (void) tileMatchTarget:(BOOL) isMatching;
-- (NSUInteger) numberOfLetter;
 
 typedef enum targetType {
-    targetTypeAllLetters = 0,
-    targetTypeSameNumberOfLetterWithOneVisible = 1,
-    targetTypeMoreNumberOfLetterWithOneVisible = 2,
+    targetTypeAllTargetsVisible = 0, //Ex. Anagram
+    targetTypeNextTargetVisible = 1, // Ex. Anagram
+    targetTypeUnlimitedTargetsNextVisible = 2,
+    //targetTypeInfiniteNumberOfLetterWithOneVisible = 3,
     
 } targetType;
 
+- (void) tileMatchTarget:(BOOL) isMatching;
+- (NSUInteger) numberOfLetterToDeal;
 - (targetType) targetType;
-
+- (BOOL) checkMatchForEachTile;  //Did we check if the tile match the target each time we move a tile or just one time at the end of the word test
 
 @end
 

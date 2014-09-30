@@ -65,7 +65,7 @@
     }*/
     //stop the stopwatch
     [self.delegate buttonHelpEnabled:NO];
-    [self.delegate wordFulfilled];
+    //[self.delegate boardCompletedFor:<#(NSArray *)#> input:<#(NSArray *)#>];
 
     //the game is completed!
     //[self.audioController playEffect:kSoundWin];

@@ -38,6 +38,12 @@ typedef enum {
     
 } scoring;
 
+
+typedef enum gameResult {
+    gameResultSuccess = 1,
+    gameResultFail = 0
+} gameResult;
+
 @required
 - (gameType) gameType:(id) sender;
 - (gameKeyboardType) gameKeyboardType:(id) sender;
@@ -45,15 +51,15 @@ typedef enum {
 - (UIView *) gameViewContainer:(id) sender;
 - (NSUInteger) timeToSolve;
 - (NSUInteger) maxWordLength;
-- (void) scoreBoardWithGameResult:(NSArray *)gameResult;
-
+//- (void) scoreBoardWithGameResult:(NSArray *)gameResult;
+- (void) gameDidFinish;
+- (void) gameResult:(gameResult)gameResult input:(NSString *)input;
 @end
 
 
 @protocol gameDatasource <NSObject>
 
 - (NSString *) nextWord;
-
 
 @end
 
@@ -66,11 +72,8 @@ typedef enum {
 @property (weak, nonatomic) id <gameDelegate> delegate;
 @property (weak, nonatomic) id <gameDatasource> datasource;
 
-
 @property (weak, nonatomic) SKHUDView* hud;
 @property (strong, nonatomic) SKBoardController *boardController;
-@property (strong, nonatomic) NSMutableArray *gameResult; //array of wordResult
-
-
+//@property (strong, nonatomic) NSMutableArray *gameResult; //array of wordResult
 
 @end

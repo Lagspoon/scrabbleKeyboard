@@ -12,4 +12,5 @@
 
 @property (strong, nonatomic) NSString *letter;
 @property (nonatomic) BOOL isMatched;
+@property (nonatomic) BOOL isPlaced;
 @end

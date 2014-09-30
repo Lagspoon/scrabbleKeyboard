@@ -15,7 +15,7 @@
 @protocol boardDelegate <NSObject>
 
 - (void) buttonHelpEnabled:(BOOL) isEnabled;
-- (void) wordFulfilled;
+- (void) boardCompleted:(NSString *)word input:(NSString *)input;
 @end
 
 
@@ -25,12 +25,11 @@
 - (BOOL) achievement;
 //display a new word on the screen
 -(void)dealWord:(NSString *) word;
--(void) clue;
 
 
 
 @property (strong, nonatomic) NSString *word;
-@property (strong, nonatomic) NSString *stringResult;
+@property (strong, nonatomic) NSString *input;
 @property (weak, nonatomic) id <boardDelegate> delegate;
 
 @end
